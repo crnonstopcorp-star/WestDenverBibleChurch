@@ -32,8 +32,8 @@ $conn->query($sql);
    OWNER EMAIL
 ========================= */
 
-$mail = new PHPMailer(true);
-
+$mail = new PHPMailer(true); 
+ 
 try {
 
     $mail->isSMTP();

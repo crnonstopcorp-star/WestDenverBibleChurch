@@ -968,3 +968,7 @@ span.fellow {
     text-decoration-skip-ink: auto;
     margin-top: -42px;
 }
+.logo img {
+    width: 85px;
+    display: none;
+}
