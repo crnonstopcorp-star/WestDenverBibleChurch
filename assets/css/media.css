@@ -1,4 +1,16 @@
 @media screen and (max-width:991px){
+        .header-top{
+        padding:18px 0px;
+    }
+    .header-center{
+        display:none;
+    }
+    .faith h2 {
+        font-size: 40px;
+    }
+    .social-icons {
+        margin-top: 75px;
+    }
     .rooted-content {
         display: block;
     }
@@ -83,6 +95,7 @@
         font-size: 20px;
         line-height: 35px;
     }
+
 }
 @media screen and (max-width:1024px){
     .footer-bottom{
@@ -247,6 +260,13 @@
     .bannmain h1 {
         font-size: 55px;
         line-height: 50px;
+    }
+    .mobile-menu{
+        flex-direction:column;
+        gap:22px;
+    }
+    .mobile-menu.active{
+        max-height:400px;
     }
 }
 @media screen and (max-width: 375px) {

@@ -1,3 +1,23 @@
+// Header
+
+$(document).ready(function () {
+    $('.mobile-menu a').click(function () {
+
+        $('.mobile-menu a').removeClass('menu-active');
+
+        $(this).addClass('menu-active');
+    });
+});
+
+$(document).ready(function () {
+    $("#hamburger").click(function () {
+        $("#mobileMenu").toggleClass("active");
+    });
+});
+
+
+// Our church
+
 document.addEventListener("DOMContentLoaded", function () {
 
   const items = document.querySelectorAll(".item");
@@ -29,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-
+// Contact Form Validation
 
 $(document).ready(function () {
 
@@ -50,11 +70,7 @@ $(document).ready(function () {
         },
         "Please enter only numbers"
     );
-
-
-
     $(".contact-form").validate({
-
         rules: {
 
             first_name: {
@@ -155,7 +171,6 @@ $(document).ready(function () {
         },
 
         submitHandler: function(form) {
-
             Swal.fire({
                 title: "Confirm Submission",
                 text: "Are you sure you want to submit this form?",
