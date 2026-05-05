@@ -1,0 +1,260 @@
+@media screen and (max-width:991px){
+    .rooted-content {
+        display: block;
+    }
+    #banner-west {
+        height: 45vh;
+    }
+    .root{
+        width: 100%;
+    }   
+    .smallmg img {
+        width: 100%;
+        height: 70%;
+    }
+    .main-img{
+         margin-top: 44px;
+    }
+    .main-img img {
+        width: 100%;
+        height: 650px;
+        object-fit: fill;
+    }
+    .bannmain h1 br {
+        display: none;
+    }
+    .taughtcl {
+        width: 100%;
+    }
+    .god-word {
+        display: block;
+    }
+    .expect {
+        transform: translateY(0) !important;
+        padding-left: 0px !important;
+    }
+    #expectations {
+        padding-top: 92px;
+    }
+    .extwo, .extwoimg {
+        width: 100%;
+    }
+    .expact {
+        display: block;
+    }
+    .extwo p {
+     line-height: 19px;
+    }
+    .extwoimg img {
+            height: 41% !important;
+        margin-top: 11px;
+    }
+    .contact-info {
+        display: block;
+        padding-top: 15px;
+    }
+    .contact-social {
+        width: 94% !important;
+    }
+    .contact {
+        width: 100%;
+    }
+    .bannmain p {
+        font-size: 22px;
+        margin-top: 21px;
+    }
+    .bannmain h1 {
+        font-size: 45px !important;
+        line-height: 50px;
+    }
+    .bannmain button {
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width:1024px){
+    .footer-bottom{
+        display: block;
+    }
+    .footer-bott{
+         margin-bottom: 20px;
+    }
+    .contact-social {
+        width: 43%;
+    }
+    .root h3,.taughtcl h3 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .faith h2{
+        font-size: 55px;
+    }
+    .bannmain h1 {
+        font-size: 75px;
+    }
+    .sermo h2, .whatchr h2 ,.root h2,.expect h2{
+        font-size: 70px;
+    }   
+    .left h3 {
+        font-size: 50px;
+    }
+    .content {
+        margin-top: 20px;
+    }
+    .left span {
+        font-size: 95px;
+    }
+    .top{
+        height: 108px;
+    }
+}
+@media (max-width: 480px) {
+  .footer-bott {
+    display: block;
+  }
+  .ptuse {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-bott{
+    display: block;
+  }
+  .footer-b {
+    display: block;
+    text-align: center;
+    }
+    .contact-social {
+        width: 91% !important;
+    }
+    .content img{
+        width: 42%;
+        height: 180px;
+        margin-top: -190px;
+    }
+    .content p{
+        margin-left: 197px;
+    }
+    .icon {
+        font-size: 105px;
+    }
+    .left h3 {
+        font-size: 45px;
+    }
+    .left {
+        gap: 10px;
+    }
+    .content p {
+        margin-left: 175px !important;
+    }
+        .root h3, .taughtcl h3{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .sermo h2, .whatchr h2, .root h2, .expect h2 {
+        font-size: 55px;
+    }
+    .bannmain p {
+        font-size: 18px;
+        margin-top: 21px;
+    }
+    .bannmain h1 {
+        font-size: 35px !important;
+        line-height: 35px;
+    }
+}
+@media screen and (max-width:1199px){
+.expect {
+    transform: translateY(86px);
+    padding-left: 400px;
+}
+.extwoimg img {
+    height: 85%;
+}
+}
+@media screen and (max-width:767px){
+    .what-ex {
+        display: block;
+    }
+    .weexp img {
+        width: 100%;
+        height: 55vh;
+        object-fit: fill;
+        margin-bottom: 20px;
+    }
+    .extwoimg img {
+        height: 58% !important;
+        margin-top: 11px;
+    }
+    .weexp img{
+        margin-top: 20px;
+    }
+     .form-row{
+        grid-template-columns:1fr;
+    }
+    .radio-wrapper{
+        gap:20px;
+    }
+    .submit-btn{
+        width:100%;
+    }
+    .content img{
+        width: 39%;
+        margin-bottom: 10px;
+    }
+    .content p {
+        margin-left: 215px;
+    }
+    .item.active .content {
+        display: block;
+    }
+    .bannmain h1 {
+        font-size: 55px !important;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 375px) {
+      .weexp img {
+        height: 43vh;
+    }
+    .extwoimg img{
+        height: 47% !important;
+        margin-top: 11px;
+    }
+    .contmai {
+        gap: 10px;
+    }
+    .phonetxt a, .mail a, .locationf a {
+        font-size: 16px;
+    }
+        .icon {
+        font-size: 110px;
+    }
+        .left h3 {
+        font-size: 40px;
+    }
+    .icon {
+        font-size: 90px;
+    }
+    .left span{
+        font-size: 75px;
+    }
+    .bannmain h1 {
+        font-size: 35px !important;
+        line-height: 35px;
+    }
+}
+@media screen and (max-width:320px){
+    .content p {
+        margin-left: 132px !important;
+    }
+    .icon {
+        font-size: 68px;
+        margin-left: 10px;
+    }
+    .content img {
+        width: 42%;
+        height: 247px;
+        margin-top: -265px;
+        object-fit: fill;
+    }
+}
