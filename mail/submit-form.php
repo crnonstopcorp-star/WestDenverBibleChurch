@@ -12,11 +12,16 @@ $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
 
 
+/* =========================
+   DB CONNECTION
+========================= */
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 /* =========================
    DB CONNECTION
 ========================= */
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
 
 $conn = new mysqli(
     $_ENV['DB_HOST'],
@@ -80,6 +85,7 @@ try {
 ];
 
     $mail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
+    $mail->setFrom('noreply@westdenverbiblechurch.myconcept.website', 'WestDenver');
     $mail->addAddress('crnonstopcorp@gmail.com'); // your real inbox
 
     $mail->isHTML(true);
@@ -99,6 +105,7 @@ try {
 
 } catch (Exception $e) {
      echo "Mailer Error (Admin Mail): " . $mail->ErrorInfo;
+    echo "Mailer Error: " . $userMail->ErrorInfo;
     exit;
 }
 
@@ -124,7 +131,10 @@ try {
     ],
 ];
 
+
     $userMail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
+    $userMail->setFrom('noreply@westdenverbiblechurch.myconcept.website', 'WestDenver');
+
     $userMail->addAddress($email);
 
     $userMail->isHTML(true);
@@ -139,7 +149,8 @@ try {
     $userMail->send();
 
 } catch (Exception $e) {
-    echo "Mailer Error (User Mail): " . $userMail->ErrorInfo;
+    echo "Mailer Error (User Mail): " . $userMail->ErrorInfo
+    echo "Mailer Error: " . $userMail->ErrorInfo;
     exit;
 }
 
@@ -154,3 +165,4 @@ window.location.href='../index.php';
 ";
 
 ?>
+
