@@ -3,7 +3,7 @@
         <!-- TOP HEADER -->
         <div class="header-top">
             <div class="logo">
-                <a href="http://localhost/WestDenverBibleChurch"><img src="assets/img/header-logo.png" alt="logo"></a>
+                <a href="/"><img src="assets/img/header-logo.png" alt="logo"></a>
             </div>
             <div class="header-center">
                 <p><span>SERMONS |</span><span class="lstream"> Live Stream HERE </span>- 10-11</p>

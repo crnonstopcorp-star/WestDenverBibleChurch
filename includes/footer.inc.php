@@ -2,7 +2,7 @@
     style="background: url('assets/img/footer-img.png'); background-size: cover; background-position: center; display: flex; align-items: center;">
     <div class="container">
         <div class="footerimage">
-            <img src="assets/img/footer-logo.png" alt="Footer logo">
+            <a href="/"><img src="assets/img/footer-logo.png" alt="Footer logo"></a>
             <p>A gospel-centered church committed to faithful Bible teaching and real community.</p>
             <hr>
         </div>
