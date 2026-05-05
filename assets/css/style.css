@@ -1153,7 +1153,7 @@ span.fellow {
     background: #F8F8F8;
     margin-top: -218px;
 }
-.fellow p {
+.fellow-c p {
     font-family:var(--main-font);
     font-weight: 400;
     font-size: 25px;
@@ -1162,7 +1162,7 @@ span.fellow {
     letter-spacing: 0%;
     color: #242424;
 }
-.fellow {
+.fellow-c {
     border-left: 4px solid var(--primary-color);
     padding-left: 27px;
     max-width: 659px;
@@ -1241,4 +1241,202 @@ span.fellow {
     text-decoration-style: solid;
     color: var(--secondary-color);
     margin-top: -40px;
+}
+#new-sermons {
+    padding: 90px 0px;
+    background: var(--char);
+}
+.teaching-para p {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #fff;
+}
+.watch-sun {
+    display: flex;
+    gap: 50px;
+}
+.watch-sun {
+    margin: 50px 0px;
+}
+.watchhead h2 {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--heading-second);
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #555b60;
+    text-align: right;
+}
+.watchhead p {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: var(--secondary-color);
+    margin-top: -42px;
+    text-align: right;
+}
+.watch-join h3 {
+    font-family: var(--second-font);
+    font-weight: 600;
+    font-size: 36px;
+    leading-trim: NONE;
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--secondary-color);
+}
+.watch-join p {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: #fff;
+    margin: 15px 0px;
+}
+.watch-join button a {
+    font-size: var(--paragraph-anchor);
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: var(--char);
+}
+.watch-join button{
+    background: var(--secondary-color);
+    box-shadow: 4px 4px 8px 0px #00000026;
+    border-radius: 6px;
+    border: 1px transparent;
+    padding: 14px 18px;
+    margin-top: 7%;
+    margin-bottom: 40px;
+}
+.watchhead {
+    margin-bottom: 25px;
+}
+.watch-image, .watch-txtimg {
+    width: 50%;
+}
+.watch-image img {
+    width: 100%;
+    height: 100%;
+}
+.sermon-content button {
+    background: var(--primary-color);
+    border-radius: 6px;
+    border: 1px transparent;
+    PADDING: 14PX 18PX;
+    box-shadow: 4px 4px 8px 0px #00000026;
+}
+.sermon-content button a {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: var(--paragraph-anchor);
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+    padding: unset;
+    text-decoration: none;
+}
+.sermon-main{
+    overflow:hidden;
+}
+.slider-line span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 33.33%;
+    height: 100%;
+    background: var(--primary-color);
+    transition: 0.5s ease;
+}
+.sermon-wrapper{
+    display:flex;
+    gap:18px;
+    transition:0.5s ease;
+}
+.power,
+.god-faithful,
+.living-faith{
+    background:#fff;
+    flex:0 0 calc((100% - 36px) / 3);
+}
+.power img,
+.god-faithful img,
+.living-faith img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    display:block;
+}
+.sermon-content{
+    padding:28px 30px;
+}
+.sermon-content h2 {
+    font-family: var(--second-font);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #000;
+}
+.sermon-content p{
+    font-size:16px;
+    color:#444;
+    margin-bottom:28px;
+}
+.sermon-content p{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #3A3A3A;
+}
+.sermon-content a:hover{
+    background:#223c33;
+}
+.slider-bottom{
+    margin-top:40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+.slider-line{
+    flex:1;
+    height:4px;
+    background:#7c7c7c;
+    position:relative;
+    overflow:hidden;
+}
+.slider-arrows{
+    display:flex;
+    gap:20px;
+}
+.slider-arrows button{
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:32px;
+    cursor:pointer;
+}
+.sermon-main {
+    margin: 60px 0px;
 }

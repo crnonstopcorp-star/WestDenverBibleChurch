@@ -25,12 +25,15 @@ include('includes/header.php');
     </div>
 </section>
 
-<section id ="latest-message">
+<section id="latest-message">
     <div class="container">
         <div class="message">
             <h2>LATEST MESSAGE</h2>
             <p>LATEST MESSAGE</p>
-            <iframe width="100%" height="70%" src="https://www.youtube.com/embed/vkQ2YwjT6Fc?si=YxMjsMrN2olMxxsH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="70%" src="https://www.youtube.com/embed/vkQ2YwjT6Fc?si=YxMjsMrN2olMxxsH"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="videohead">
             <div class="videotitle">
@@ -44,10 +47,11 @@ include('includes/header.php');
     </div>
 </section>
 
-<section id ="fellowship">
+<section id="fellowship">
     <div class="container">
-        <div class="fellow">
-            <p>Our church incorporates God’s family into our fellowship. We provide a warm, authentic community, welcoming new belivers into the body of Christ through baptism.</p>
+        <div class="fellow-c">
+            <p>Our church incorporates God’s family into our fellowship. We provide a warm, authentic community,
+                welcoming new belivers into the body of Christ through baptism.</p>
         </div>
     </div>
 </section>
@@ -58,7 +62,7 @@ include('includes/header.php');
             <div class="events col-lg-3 col-md-6 col-12">
                 <img src="assets/img/reading.png" alt="Bible Reading">
                 <h3>Bible Reading</h3>
-                <p>Explore the bible with Us</p>    
+                <p>Explore the bible with Us</p>
             </div>
             <div class="events col-lg-3 col-md-6 col-12">
                 <img src="assets/img/events.png" alt="OUR EVENTS">
@@ -74,14 +78,14 @@ include('includes/header.php');
                 <img src="assets/img/groups.png" alt="OUR GROUPS">
                 <h3>OUR GROUPS</h3>
                 <p>Join our Communities</p>
-            </div> 
+            </div>
         </div>
     </div>
 </section>
 
 <!-- NEW SERMONS -->
 
-<section id ="new-sermons">
+<section id="new-sermons">
     <div class="container">
         <div class="teaching">
             <div class="teaching-ser">
@@ -89,13 +93,91 @@ include('includes/header.php');
                 <p>NEW SERMONS</p>
             </div>
             <div class="teaching-para">
-                <p>Our teaching ministry focuses on verse-by-verse exposition of Scripture so that the meaning of the text is understood in its proper context. These sermons are made available so you can continue learning from God’s Word throughout the week.</p>
+                <p>Our teaching ministry focuses on verse-by-verse exposition of Scripture so that the meaning of the
+                    text is understood in its proper context. These sermons are made available so you can continue
+                    learning from God’s Word throughout the week.</p>
+            </div>
+        </div>
+        <div class="sermon-main">
+            <div class="sermon-wrapper">
+                <div class="living-faith">
+                    <img src="assets/img/faith.png" alt="Living By Faith">
+                    <div class="sermon-content">
+                        <h2>LIVING BY FAITH</h2>
+                        <p>Pastor John Smith - 25 feb</p>
+                        <button><a href="#">Watch Sermons</a></button>
+                    </div>
+                </div>
+                <div class="power">
+                    <img src="assets/img/power-grace.png" alt="Power Of Grace">
+
+                    <div class="sermon-content">
+                        <h2>THE POWER OF GRACE</h2>
+                        <p>Pastor John Smith - 25 feb</p>
+                        <button><a href="#">Watch Sermons</a></button>
+                    </div>
+                </div>
+                <div class="god-faithful">
+                    <img src="assets/img/god-faith.png" alt="God Faithfulness">
+
+                    <div class="sermon-content">
+                        <h2>GOD’S FAITHFULNESS</h2>
+                        <p>Pastor John Smith - 25 feb</p>
+                        <button><a href="#">Watch Sermons</a></button>
+                    </div>
+                </div>
+                <!-- Extra Slides -->
+                <div class="living-faith">
+                    <img src="assets/img/faith.png" alt="Faith">
+
+                    <div class="sermon-content">
+                        <h2>WALK IN FAITH</h2>
+                        <p>Pastor John Smith - 25 feb</p>
+                        <button><a href="#">Watch Sermons</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-bottom">
+
+            <div class="slider-line">
+                <span></span>
+            </div>
+
+            <div class="slider-arrows">
+
+                <button class="prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <button class="next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+        <div class="watch-sun">
+            <div class="watch-image">
+                <img src="assets/img/watchwe.png" alt="">
+            </div>
+            <div class="watch-txtimg">
+                <div class="watchhead">
+                    <h2>LIVE</h2>
+                    <p>Join Us Live</p>
+                </div>
+                <div class="watch-join">
+                    <h3>Watch our Sunday service live from wherever you are.</h3>
+                    <p>If you can not be with us in person, you are invited to join us online.</p>
+                    <button><a href="#">Watch Livestream</a></button>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
+
 <?php include('includes/live.php'); ?>
 
 <?php include('includes/footer.inc.php'); ?>
-

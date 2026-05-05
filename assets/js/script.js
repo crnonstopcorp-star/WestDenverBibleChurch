@@ -202,3 +202,94 @@ $(document).ready(function () {
     });
 
 });
+
+
+// Sermon Slider
+
+$(document).ready(function(){
+    let currentIndex = 0;
+    const wrapper = $(".sermon-wrapper");
+    const slides = $(".sermon-wrapper > div");
+    const progress = $(".slider-line span");
+
+    function slidesPerView(){
+
+        if($(window).width() <= 480){
+            return 1;
+        }
+        else if($(window).width() <= 991){
+            return 2;
+        }
+        else{
+            return 3;
+        }
+    }
+    function updateSlider(){
+        const perView = slidesPerView();
+        const slideWidth = slides.outerWidth(true);
+        wrapper.css(
+            "transform",
+            `translateX(-${currentIndex * slideWidth}px)`
+        );
+        const progressWidth =
+        ((currentIndex + perView) / slides.length) * 100;
+
+        progress.css("width", progressWidth + "%");
+    }
+    function nextSlide(){
+        const perView = slidesPerView();
+        const maxIndex = slides.length - perView;
+        currentIndex++;
+        if(currentIndex > maxIndex){
+            currentIndex = 0;
+        }
+        updateSlider();
+    }
+    function prevSlide(){
+        const perView = slidesPerView();
+        const maxIndex = slides.length - perView;
+        currentIndex--;
+        if(currentIndex < 0){
+            currentIndex = maxIndex;
+        }
+        updateSlider();
+    }
+    $(".next").click(function(){
+        nextSlide();
+    });
+
+    $(".prev").click(function(){
+        prevSlide();
+    });
+
+    /* AUTOPLAY */
+
+    let autoSlide = setInterval(function(){
+        nextSlide();
+    }, 3000);
+
+    /* PAUSE ON HOVER */
+
+    $(".sermon-main").hover(
+
+        function(){
+            clearInterval(autoSlide);
+        },
+
+        function(){
+
+            autoSlide = setInterval(function(){
+                nextSlide();
+            }, 3000);
+
+        }
+
+    );
+
+    $(window).resize(function(){
+        updateSlider();
+    });
+
+    updateSlider();
+
+});
