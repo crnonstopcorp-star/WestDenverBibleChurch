@@ -1,231 +1,150 @@
 <?php
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use Dotenv\Dotenv;
 
 require '../vendor/autoload.php';
 
-$host = getenv('DB_HOST');
-$user = getenv('DB_USER');
-$pass = getenv('DB_PASS');
-$db   = getenv('DB_NAME');
+/* =========================
+   LOAD ENV
+========================= */
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
 
-$conn = new mysqli($host, $user, $pass, $db);
 
-if ($conn->connect_error) {
-    die("Database Connection Failed");
+/* =========================
+   DB CONNECTION
+========================= */
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
+$conn = new mysqli(
+    $_ENV['DB_HOST'],
+    $_ENV['DB_USER'],
+    $_ENV['DB_PASS'],
+    $_ENV['DB_NAME']
+);
+
+$conn->set_charset("utf8mb4");
+
+/* =========================
+   GET & VALIDATE INPUT
+========================= */
+$first_name = trim($_POST['first_name'] ?? '');
+$last_name  = trim($_POST['last_name'] ?? '');
+$email      = trim($_POST['email'] ?? '');
+$phone      = trim($_POST['phone'] ?? '');
+$help       = trim($_POST['help'] ?? '');
+$message    = trim($_POST['message'] ?? '');
+
+if (!$first_name || !$email || !$message) {
+    die("Required fields missing");
 }
 
-$first_name = $_POST['first_name'];
-$last_name  = $_POST['last_name'];
-$email      = $_POST['email'];
-$phone      = $_POST['phone'];
-$help       = $_POST['help'];
-$message    = $_POST['message'];
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    die("Invalid email format");
+}
 
-$sql = "INSERT INTO contact_form 
-(first_name, last_name, email, phone, inquiry_type, message)
-VALUES 
-('$first_name', '$last_name', '$email', '$phone', '$help', '$message')";
+/* =========================
+   INSERT INTO DATABASE
+========================= */
+$stmt = $conn->prepare("
+    INSERT INTO contact_form 
+    (first_name, last_name, email, phone, inquiry_type, message)
+    VALUES (?, ?, ?, ?, ?, ?)
+");
 
-$conn->query($sql);
-
-
-
+$stmt->bind_param("ssssss", $first_name, $last_name, $email, $phone, $help, $message);
+$stmt->execute();
 
 /* =========================
    OWNER EMAIL
 ========================= */
+$mail = new PHPMailer(true);
 
-$mail = new PHPMailer(true); 
- 
 try {
-
     $mail->isSMTP();
     $mail->Host       = 'smtp-relay.brevo.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = '9a4a7c001@smtp-brevo.com';
-    $mail->Password   = getenv('SMTP_KEY');
-    $mail->SMTPSecure = 'PHPMailer::ENCRYPTION_STARTTLS';
+    $mail->Username   = 'apikey';
+    $mail->Password   = $_ENV['SMTP_KEY'];
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
+    
+    $mail->SMTPOptions = [
+    'ssl' => [
+        'verify_peer'       => false,
+        'verify_peer_name'  => false,
+        'allow_self_signed' => true,
+    ],
+];
 
-    $mail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
-
-    $mail->addAddress('mahalleavanti@gmail.com');
+    $mail->setFrom('noreply@westdenverbiblechurch.myconcept.website', 'WestDenver');
+    $mail->addAddress('crnonstopcorp@gmail.com'); // your real inbox
 
     $mail->isHTML(true);
-
     $mail->Subject = 'New Contact Form Submission';
 
- $mail->Body = "
-<div style='font-family:Arial,sans-serif;background:#f4f4f4;padding:40px 20px;'>
-
-    <div style='max-width:600px;margin:auto;background:#ffffff;border-radius:12px;overflow:hidden;'>
-
-        <div style='background:#355c50;padding:25px;text-align:center;'>
-            <h2 style='color:#ffffff;margin:0;font-size:28px;'>
-                New Contact Form Submission
-            </h2>
-        </div>
-
-        <div style='padding:35px;'>
-
-            <table style='width:100%;border-collapse:collapse;'>
-
-                <tr>
-                    <td style='padding:12px 0;font-weight:bold;color:#0c2330;width:180px;'>
-                        First Name:
-                    </td>
-
-                    <td style='padding:12px 0;color:#555;'>
-                        $first_name
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style='padding:12px 0;font-weight:bold;color:#0c2330;'>
-                        Last Name:
-                    </td>
-
-                    <td style='padding:12px 0;color:#555;'>
-                        $last_name
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style='padding:12px 0;font-weight:bold;color:#0c2330;'>
-                        Email:
-                    </td>
-
-                    <td style='padding:12px 0;color:#555;'>
-                        $email
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style='padding:12px 0;font-weight:bold;color:#0c2330;'>
-                        Phone:
-                    </td>
-
-                    <td style='padding:12px 0;color:#555;'>
-                        $phone
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style='padding:12px 0;font-weight:bold;color:#0c2330;'>
-                        Inquiry:
-                    </td>
-
-                    <td style='padding:12px 0;color:#555;'>
-                        $help
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style='padding:12px 0;font-weight:bold;color:#0c2330;vertical-align:top;'>
-                        Message:
-                    </td>
-
-                    <td style='padding:12px 0;color:#555;line-height:1.7;'>
-                        $message
-                    </td>
-                </tr>
-
-            </table>
-
-        </div>
-
-    </div>
-
-</div>
-";
+    $mail->Body = "
+        <h2>New Contact Form Submission</h2>
+        <p><strong>First Name:</strong> {$first_name}</p>
+        <p><strong>Last Name:</strong> {$last_name}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Phone:</strong> {$phone}</p>
+        <p><strong>Inquiry:</strong> {$help}</p>
+        <p><strong>Message:</strong><br>{$message}</p>
+    ";
 
     $mail->send();
 
 } catch (Exception $e) {
+    echo "Mailer Error: " . $userMail->ErrorInfo;
+    exit;
 }
-
-
-
 
 /* =========================
    USER THANK YOU EMAIL
 ========================= */
-
 $userMail = new PHPMailer(true);
 
 try {
-
     $userMail->isSMTP();
     $userMail->Host       = 'smtp-relay.brevo.com';
     $userMail->SMTPAuth   = true;
-    $userMail->Username   = '9a4a7c001@smtp-brevo.com';
-    $userMail->Password   = getenv('SMTP_KEY');
-    $userMail->SMTPSecure = 'PHPMailer::ENCRYPTION_STARTTLS';
+    $userMail->Username   = 'apikey';
+    $userMail->Password   = $_ENV['SMTP_KEY'];
+    $userMail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $userMail->Port       = 587;
+    
+    $userMail->SMTPOptions = [
+    'ssl' => [
+        'verify_peer'       => false,
+        'verify_peer_name'  => false,
+        'allow_self_signed' => true,
+    ],
+];
 
-    $userMail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
-
+    $userMail->setFrom('noreply@westdenverbiblechurch.myconcept.website', 'WestDenver');
     $userMail->addAddress($email);
 
     $userMail->isHTML(true);
-
     $userMail->Subject = 'Thank You For Contacting Us';
 
     $userMail->Body = "
-<div style='font-family:Arial,sans-serif;background:#f4f4f4;padding:40px 20px;'>
-
-    <div style='max-width:600px;margin:auto;background:#ffffff;border-radius:12px;overflow:hidden;'>
-
-        <div style='background:#355c50;padding:30px;text-align:center;'>
-
-            <h1 style='color:#ffffff;margin:0;font-size:32px;'>
-                Thank You!
-            </h1>
-
-        </div>
-
-        <div style='padding:40px 35px;'>
-
-            <h2 style='color:#0c2330;margin-top:0;'>
-                Dear $first_name,
-            </h2>
-
-            <p style='color:#555;font-size:16px;line-height:1.8;margin-bottom:20px;'>
-
-                Thank you for contacting WestDenver.
-
-                We have successfully received your message and our team will get back to you shortly.
-
-            </p>
-            <p style='color:#555;font-size:16px;line-height:1.8;'>
-
-                We appreciate your interest and will contact you as soon as possible.
-
-            </p>
-
-            <p style='margin-top:35px;color:#0c2330;font-weight:bold;'>
-
-                Regards,<br>
-                WestDenver Team
-
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
-";
+        <h2>Thank You, {$first_name}!</h2>
+        <p>We have received your message and will get back to you shortly.</p>
+        <p>Regards,<br>WestDenver Team</p>
+    ";
 
     $userMail->send();
 
 } catch (Exception $e) {
+    echo "Mailer Error: " . $userMail->ErrorInfo; ✅
+    exit;
 }
 
-
-
+/* =========================
+   SUCCESS RESPONSE
+========================= */
 echo "
 <script>
 alert('Form submitted successfully!');
