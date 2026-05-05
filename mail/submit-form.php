@@ -12,6 +12,7 @@ $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
 
 
+
 /* =========================
    DB CONNECTION
 ========================= */
@@ -78,7 +79,7 @@ try {
     ],
 ];
 
-    $mail->setFrom('noreply@westdenverbiblechurch.myconcept.website', 'WestDenver');
+    $mail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
     $mail->addAddress('crnonstopcorp@gmail.com'); // your real inbox
 
     $mail->isHTML(true);
@@ -97,7 +98,7 @@ try {
     $mail->send();
 
 } catch (Exception $e) {
-    echo "Mailer Error: " . $userMail->ErrorInfo;
+     echo "Mailer Error (Admin Mail): " . $mail->ErrorInfo;
     exit;
 }
 
@@ -123,7 +124,7 @@ try {
     ],
 ];
 
-    $userMail->setFrom('noreply@westdenverbiblechurch.myconcept.website', 'WestDenver');
+    $userMail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
     $userMail->addAddress($email);
 
     $userMail->isHTML(true);
@@ -138,7 +139,7 @@ try {
     $userMail->send();
 
 } catch (Exception $e) {
-    echo "Mailer Error: " . $userMail->ErrorInfo; ✅
+    echo "Mailer Error (User Mail): " . $userMail->ErrorInfo;
     exit;
 }
 

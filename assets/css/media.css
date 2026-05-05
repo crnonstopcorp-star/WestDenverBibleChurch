@@ -70,6 +70,19 @@
     .bannmain button {
         margin-top: 35px;
     }
+    .message iframe {
+        height: 45% !important;
+    }
+    .videotitle h3{
+      font-size: 25px;
+    }
+    .videotitle h4 {
+        font-size: 20px;
+    }
+    .fellow p {
+        font-size: 20px;
+        line-height: 35px;
+    }
 }
 @media screen and (max-width:1024px){
     .footer-bottom{
@@ -91,7 +104,7 @@
     .bannmain h1 {
         font-size: 75px;
     }
-    .sermo h2, .whatchr h2 ,.root h2,.expect h2{
+    .sermo h2, .whatchr h2 ,.root h2,.expect h2,.message h2,.live h2{
         font-size: 70px;
     }   
     .left h3 {
@@ -105,6 +118,13 @@
     }
     .top{
         height: 108px;
+    }
+    .videobut {
+        width: 30%;
+        margin-top: 0%;
+    }
+    .message iframe {
+        height: 63%;
     }
 }
 @media (max-width: 480px) {
@@ -150,7 +170,7 @@
         font-size: 35px;
         line-height: 40px;
     }
-    .sermo h2, .whatchr h2, .root h2, .expect h2 {
+    .sermo h2, .whatchr h2 ,.root h2,.expect h2,.message h2,.live h2 {
         font-size: 55px;
     }
     .bannmain p {
@@ -160,6 +180,23 @@
     .bannmain h1 {
         font-size: 35px !important;
         line-height: 35px;
+    }
+    .message p {
+        margin-top: -33px;
+    }
+    .videotitle h4 {
+        font-size: 18px;
+    }
+    .videobut{
+        width: 100%;
+        MARGIN-TOP: -45px;
+        PADDING: 0;
+    }
+    .videohead{
+        display: block;
+    }
+    .message iframe {
+        height: 34% !important;
     }
 }
 @media screen and (max-width:1199px){
@@ -208,7 +245,7 @@
         display: block;
     }
     .bannmain h1 {
-        font-size: 55px !important;
+        font-size: 55px;
         line-height: 50px;
     }
 }
@@ -256,5 +293,10 @@
         height: 247px;
         margin-top: -265px;
         object-fit: fill;
+    }
+}
+@media screen and (max-width: 1399px) and (min-width: 992px) {
+    .events h3 {
+        font-size: 29px;
     }
 }

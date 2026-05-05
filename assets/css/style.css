@@ -934,6 +934,8 @@ span.fellow {
     text-decoration: none !important;
 }
 
+/* Sermons page */
+
 /* Join */
 #join-live{
     text-align: center;
@@ -943,7 +945,7 @@ span.fellow {
     font-family: var(--main-font);
     font-weight: 700;
     font-style: Bold;
-    font-size: 90px;
+    font-size: var(--heading-second);
     leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
@@ -968,7 +970,171 @@ span.fellow {
     text-decoration-skip-ink: auto;
     margin-top: -42px;
 }
-.logo img {
-    width: 85px;
-    display: none;
+.message h2 {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--heading-second);
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #eaebeb;
+    text-align: center;
+}
+.message p {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: -42px;
+    margin-bottom: 50px;
+}
+#latest-message {
+    padding: 80px 0px;
+}
+.videohead{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    background: #2e4e45;
+    padding: 35px 30px;
+    z-index: 1;
+    position: relative;
+}
+.videotitle h3 {
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 35px;
+    leading-trim: NONE;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+     color: var(--secondary-color);
+}
+.videotitle h4 {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 25px;
+    leading-trim: NONE;
+    line-height: 50px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #fff;
+}
+.videobut button {
+    background: var(--secondary-color);
+    box-shadow: 4px 4px 8px 0px #00000026;
+    border-radius: 6px;
+    border: 1px transparent;
+    padding: 14px 18px;
+    margin-top: 20%;
+}
+.videobut button a {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: var(--paragraph-anchor);
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: var(--char);
+}
+#fellowship {
+    padding: 240px 0px 80px 0px;
+    background: #F8F8F8;
+    margin-top: -218px;
+}
+.fellow p {
+    font-family:var(--main-font);
+    font-weight: 400;
+    font-size: 25px;
+    leading-trim: NONE;
+    line-height: 48px;
+    letter-spacing: 0%;
+    color: #242424;
+}
+.fellow {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 27px;
+    max-width: 659px;
+    margin-left: 8%;
+}
+.events img {
+    width: 100%;
+} 
+.events h3 {
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    leading-trim: NONE;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 22px;
+}
+.events p {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #5B5B5B;
+}
+#reading {
+    background: #F8F8F8;
+    padding-bottom: 80px;
+}
+.teaching {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+}
+.teaching-ser h2 {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--heading-second);
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #3d4348;
+}
+.teaching-ser, .teaching-para {
+    width: 50%;
+}
+.teaching-ser p {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: var(--secondary-color);
+}
+.teaching-ser p {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: var(--secondary-color);
+    margin-top: -40px;
 }
