@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/myconcept/public_html/westdenverbiblechurch.myconcept.website/
+    - /bin/cp -R * $DEPLOYPATH
