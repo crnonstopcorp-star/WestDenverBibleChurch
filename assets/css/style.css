@@ -1610,3 +1610,26 @@ span.fellow {
     color: #fff;
     text-decoration: none;
 }
+.contact-mail p span {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+span.worsh {
+    text-decoration: none !important;
+}
+.outrech {
+    display: flex;
+    gap: 11px;
+}
+.reach-call p {
+    line-height: 25px;
+}
+.reach-call p a {
+    color: #fff;
+    text-decoration: none;
+}
