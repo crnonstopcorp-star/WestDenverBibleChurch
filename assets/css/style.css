@@ -590,9 +590,28 @@ p.our {
 }
 button.enter {
     background: #3B3B3B;
-    padding: 15px 25px 0px 25px;
+    padding: 0px 16px;
     border-radius: 4px;
     border: 1px solid transparent;
+}
+button.enter input{
+    background: #3B3B3B;
+    padding: 10px 0px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    color: #fff;
+}
+.enter input::placeholder{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #616161;
+}
+button.enter input:focus-visible {
+    outline: 1px solid transparent;
 }
 button.subscribe p {
     font-family: var(--main-font);
@@ -674,6 +693,7 @@ button.subscribe {
 }
 .footer-bottom {
     display: flex;
+    margin-top: 40px;
 }
 .quick-link,.service {
     width: 50%;

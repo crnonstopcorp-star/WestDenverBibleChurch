@@ -42,11 +42,11 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16"
                                 fill="none">
                                 <path d="M20 0H0V16H20V0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="white" />
-                            </svg> 
+                            </svg>
                         </div>
-                            <div class="reach-call">
-                                <p><a href="mailto:info@WestDenverBibleChurch.org">info@WestDenverBibleChurch.org</a></p>
-                            </div>
+                        <div class="reach-call">
+                            <p><a href="mailto:info@WestDenverBibleChurch.org">info@WestDenverBibleChurch.org</a></p>
+                        </div>
                     </div>
                     <div class="outrech">
                         <div class="reach-callsvg">
@@ -58,7 +58,8 @@
                                 </svg></p>
                         </div>
                         <div class="reach-call">
-                            <p><a href="https://maps.app.goo.gl/T3x6u6TrZXeNbhLD8" target="_blank"> 2109 S. Wadsworth Blvd, Suite 203, Lakewood, CO 80227</a></p>
+                            <p><a href="https://maps.app.goo.gl/T3x6u6TrZXeNbhLD8" target="_blank"> 2109 S. Wadsworth
+                                    Blvd, Suite 203, Lakewood, CO 80227</a></p>
                         </div>
                     </div>
                 </div>
@@ -67,19 +68,26 @@
                 <div class="service">
                     <h4>Service</h4>
                     <p><span>Sundays:</span></p>
-                    <p><span class="fellow">Fellowship:</span> <span class="ser"> 10:00-10:30 AM </span><br><span class="fellow">Worship:</span><span class="ser"> 10:30 - 12:00 PM</span></p>
+                    <p><span class="fellow">Fellowship:</span> <span class="ser"> 10:00-10:30 AM </span><br><span
+                            class="fellow">Worship:</span><span class="ser"> 10:30 - 12:00 PM</span></p>
                     <p><span>Wednesdays:</span> 6:30 PM</p>
                 </div>
                 <div class="join-news">
                     <div class="join1">
                         <h5 class="mb-4">Join Our Newsletter</h5>
-                        <button class="enter">
-                            <p>Enter Your email address</p>
-                        </button>
-                        <button class="subscribe">
-                            <p>Subscribe</p>
-                        </button>
-                        <p class="mt-4">* Will send you weekly updates for your better tool management.</p>
+                        <form action="mail/subscribe.php" method="POST" class="newsletter-form">
+                            <button type="button" class="enter">
+                                <input type="email" name="email" placeholder="Enter Your email address" required>
+                            </button>
+
+                            <button type="submit" class="subscribe">
+                                <p>Subscribe</p>
+                            </button>
+                        </form>
+
+                        <p class="mt-4">
+                            * Will send you weekly updates for your better tool management.
+                        </p>
                     </div>
                 </div>
             </div>

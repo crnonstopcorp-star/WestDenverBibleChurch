@@ -85,7 +85,7 @@ try {
 ];
 
     $mail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
-    $mail->addAddress('mahalleavanti@gmail.com'); // your real inbox
+    $mail->addAddress('mahalleavanti@gmail.com'); 
 
     $mail->isHTML(true);
     $mail->Subject = 'New Contact Form Submission';
