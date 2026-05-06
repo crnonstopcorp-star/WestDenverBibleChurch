@@ -71,7 +71,7 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp-relay.brevo.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'apikey';
+    $mail->Username = '9a4a7c001@smtp-brevo.com';
     $mail->Password   = $_ENV['SMTP_KEY'];
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
@@ -85,27 +85,91 @@ try {
 ];
 
     $mail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
-    $mail->setFrom('noreply@westdenverbiblechurch.myconcept.website', 'WestDenver');
-    $mail->addAddress('crnonstopcorp@gmail.com'); // your real inbox
+    $mail->addAddress('mahalleavanti@gmail.com'); // your real inbox
 
     $mail->isHTML(true);
     $mail->Subject = 'New Contact Form Submission';
 
-    $mail->Body = "
-        <h2>New Contact Form Submission</h2>
-        <p><strong>First Name:</strong> {$first_name}</p>
-        <p><strong>Last Name:</strong> {$last_name}</p>
-        <p><strong>Email:</strong> {$email}</p>
-        <p><strong>Phone:</strong> {$phone}</p>
-        <p><strong>Inquiry:</strong> {$help}</p>
-        <p><strong>Message:</strong><br>{$message}</p>
-    ";
+   $mail->Body = "
+<div style='max-width:600px; margin:0 auto; font-family:Source Sans 3; background:#ffffff; border:1px solid #e5e5e5; border-radius:10px; overflow:hidden;'>
+
+    <div style='background:#2f4f46; padding:20px; text-align:center;'>
+        <h2 style='color:#ffffff; margin:0; font-size:28px;'>
+            New Contact Form Submission
+        </h2>
+    </div>
+
+    <div style='padding:30px;'>
+
+        <table style='width:100%; border-collapse:collapse;'>
+
+            <tr>
+                <td style='padding:12px; font-weight:bold; color:#333; border-bottom:1px solid #eee; width:35%;'>
+                    First Name
+                </td>
+                <td style='padding:12px; color:#555; border-bottom:1px solid #eee;'>
+                    {$first_name}
+                </td>
+            </tr>
+
+            <tr>
+                <td style='padding:12px; font-weight:bold; color:#333; border-bottom:1px solid #eee;'>
+                    Last Name
+                </td>
+                <td style='padding:12px; color:#555; border-bottom:1px solid #eee;'>
+                    {$last_name}
+                </td>
+            </tr>
+
+            <tr>
+                <td style='padding:12px; font-weight:bold; color:#333; border-bottom:1px solid #eee;'>
+                    Email
+                </td>
+                <td style='padding:12px; color:#555; border-bottom:1px solid #eee;'>
+                    {$email}
+                </td>
+            </tr>
+
+            <tr>
+                <td style='padding:12px; font-weight:bold; color:#333; border-bottom:1px solid #eee;'>
+                    Phone
+                </td>
+                <td style='padding:12px; color:#555; border-bottom:1px solid #eee;'>
+                    {$phone}
+                </td>
+            </tr>
+
+            <tr>
+                <td style='padding:12px; font-weight:bold; color:#333; border-bottom:1px solid #eee;'>
+                    Inquiry
+                </td>
+                <td style='padding:12px; color:#555; border-bottom:1px solid #eee;'>
+                    {$help}
+                </td>
+            </tr>
+
+            <tr>
+                <td style='padding:12px; font-weight:bold; color:#333; border-bottom:1px solid #eee;'>
+                    Message
+                </td>
+                <td style='padding:12px; color:#555; border-bottom:1px solid #eee;'>
+                    {$message}
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div style='background:#f5f5f5; padding:18px; text-align:center; color:#777; font-size:14px;'>
+        WestDenver Bible Church Contact Form
+    </div>
+
+</div>
+";
 
     $mail->send();
 
 } catch (Exception $e) {
-     echo "Mailer Error (Admin Mail): " . $mail->ErrorInfo;
-    echo "Mailer Error: " . $userMail->ErrorInfo;
+    echo "Mailer Error (Admin Mail): " . $mail->ErrorInfo;
     exit;
 }
 
@@ -118,7 +182,7 @@ try {
     $userMail->isSMTP();
     $userMail->Host       = 'smtp-relay.brevo.com';
     $userMail->SMTPAuth   = true;
-    $userMail->Username   = 'apikey';
+    $userMail->Username = '9a4a7c001@smtp-brevo.com';
     $userMail->Password   = $_ENV['SMTP_KEY'];
     $userMail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $userMail->Port       = 587;
@@ -133,24 +197,41 @@ try {
 
 
     $userMail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
-    $userMail->setFrom('noreply@westdenverbiblechurch.myconcept.website', 'WestDenver');
 
     $userMail->addAddress($email);
 
     $userMail->isHTML(true);
     $userMail->Subject = 'Thank You For Contacting Us';
 
-    $userMail->Body = "
-        <h2>Thank You, {$first_name}!</h2>
-        <p>We have received your message and will get back to you shortly.</p>
-        <p>Regards,<br>WestDenver Team</p>
-    ";
+  $userMail->Body = "
+
+        <div style='max-width:600px; margin:0 auto; font-family:Source Sans 3; background:#ffffff; border:1px solid #e5e5e5; border-radius:10px; overflow:hidden;'>
+            <div style='background:#2f4f46; padding:20px; text-align:center;'>
+                <h2 style='color:#ffffff; margin:0; font-size:28px;'>
+                    Thank You, {$first_name}!
+                </h2>
+            </div>
+
+            <div style='padding:30px;'>
+
+                <p style='font-size:16px; color:#555; line-height:1.8; margin-top:0;'>
+                    We have received your message and will get back to you shortly.
+                </p>
+
+                <p style='font-size:16px; color:#555; line-height:1.8; margin-bottom:0;'>
+                    Regards,<br>
+                    <strong>WestDenver Team</strong>
+                </p>
+
+            </div>
+
+        </div>
+";
 
     $userMail->send();
 
 } catch (Exception $e) {
-    echo "Mailer Error (User Mail): " . $userMail->ErrorInfo
-    echo "Mailer Error: " . $userMail->ErrorInfo;
+    echo "Mailer Error (User Mail): " . $userMail->ErrorInfo;
     exit;
 }
 
