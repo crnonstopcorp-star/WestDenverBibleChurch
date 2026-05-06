@@ -24,10 +24,10 @@ switch ($page_slug) {
         $webpage_schema             = "";
         break;
 
-    case "services":
-        $webpage_title              = "Services Page";
-        $webpage_description        = "Services Page description";
-        $webpage_keywords           = "Services Page keywords";
+    case "sermons":
+        $webpage_title              = "Sermons Page";
+        $webpage_description        = "Sermons Page description";
+        $webpage_keywords           = "Sermons Page keywords";
         $webpage_schema             = "";
         break;
 
@@ -41,7 +41,7 @@ switch ($page_slug) {
 #           IMP NOTES : DO NOT CHANGE ANYTHING IN BELOW LINES                     #  
 # =============================================================================== #
 ?>
-    <title>PHP-Repo :: <?php echo $webpage_title; ?></title>
+    <title><?php echo $webpage_title; ?></title>
     <meta name="description" content="<?php echo $webpage_description; ?>">
     <meta name="keywords" content="<?php echo $webpage_keywords; ?>">
     <link rel="canonical" href="<?php echo $page_url;?>" />

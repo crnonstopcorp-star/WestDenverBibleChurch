@@ -16,7 +16,7 @@
                         <li><a href="#">New Here</a></li>
                         <li><a href="./about.php">Who We Are</a></li>
                         <li><a href="#">Get Connected</a></li>
-                        <li><a href="./contact-us.php">Contact</a></li>
+                        <li><a href="./contact.php">Contact</a></li>
                     </ul>
                 </div>
                 <div class="reach-out">

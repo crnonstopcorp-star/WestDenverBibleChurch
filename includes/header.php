@@ -47,7 +47,7 @@
             <a href="./sermons.php">Sermons</a>
             <a href="./about.php">About</a>
             <a href="#">Giving</a>
-            <a href="./contact-us.php">Contact</a>
+            <a href="./contact.php">Contact</a>
         </div>
     </div>
 </header>
