@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-  --primary-color: #2f4f46;
+  --primary-color: rgba(47, 79, 70, 1);
   --secondary-color: #E7E1D7;
   --text-color: #000000;
   --reg-color:#fff;

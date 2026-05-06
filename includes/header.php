@@ -45,7 +45,7 @@
         <div class="mobile-menu" id="mobileMenu">
             <a href="#">Home</a>
             <a href="./sermons.php">Sermons</a>
-            <a href="#">About</a>
+            <a href="./about.php">About</a>
             <a href="#">Giving</a>
             <a href="#">Contact</a>
         </div>
