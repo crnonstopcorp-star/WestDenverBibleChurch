@@ -108,6 +108,72 @@
     .contact-loca {
         height: 328px;
     }
+    .about-section{
+        padding:90px 0 140px;
+    }
+    .about-title{
+        font-size:58px;
+        line-height:66px;
+        margin-bottom:60px;
+    }
+    .about-image-wrapper img{
+        height:520px;
+    }
+    .about-card{
+        position:relative;
+        bottom:auto;
+        left:auto;
+        transform:none;
+        width:100%;
+        margin-top:-60px;
+        padding:40px 30px;
+        border-radius:30px;
+    }
+    .about-card h2{
+        font-size:34px;
+        line-height:44px;
+    }
+    .ministry-section{
+        padding:90px 0;
+    }
+    .ministry-wrapper{
+        min-height:auto;
+        max-width:auto;
+        padding:0px;
+    }
+    .ministry-bg{
+        height:600px;
+    }
+    .ministry-card{
+        position:relative;
+        top:auto;
+        right:auto;
+        transform:none;
+        margin-top:-80px;
+        margin-inline:auto;
+    }
+    .ministry-heading h2{
+        font-size:42px;
+    }
+    .ministry-content h3{
+        font-size:34px;
+    }
+    .believe-section{
+        padding:90px 0;
+    }
+    .believe-header{
+        margin-bottom:50px;
+    }
+    .believe-header h2{
+        font-size:70px;
+        top:-20px;  
+    }
+    .believe-image img{
+        height:460px;
+    }
+    .believe-text{
+        margin-bottom:35px;
+    }
 }
 @media screen and (max-width:1024px){
     .footer-bottom{
@@ -243,6 +309,36 @@
         font-size: 35px;
         margin-bottom: 25px;
     }
+     .about-title{
+        font-size:34px;
+        line-height:42px;
+    }
+    .about-image-wrapper img{
+        height:340px;
+    }
+    .about-card h2{
+        font-size:24px;
+        line-height:34px;
+    }
+    .about-card p{
+        font-size:15px;
+        line-height:26px;
+    }
+    .ministry-heading h2{
+        font-size:26px;
+    }
+    .cross-icon{
+        font-size:34px;
+    }
+    .ministry-content h3{
+        font-size:24px;
+    }
+    .believe-header h2{
+        font-size:42px;
+    }
+    .believe-header .sub-title{
+        font-size:12px;
+    }
 }
 @media screen and (max-width:1199px){
 .expect {
@@ -329,6 +425,99 @@
     .watch-txtimg {
         margin-top: 40px;
     }
+     .about-section{
+        padding:70px 0 100px;
+    }
+    .about-title{
+        font-size:42px;
+        line-height:50px;
+    }
+    .about-image-wrapper img{
+        height:420px;
+    }
+    .about-card{
+        padding:35px 22px;
+        border-radius:24px;
+        margin-top:-40px;
+    }
+    .about-card h2{
+        font-size:28px;
+        line-height:38px;
+        margin-bottom:18px;
+    }
+    .about-card p{
+        font-size:16px;
+        line-height:28px;
+    }
+    .visit-btn{
+        width:100%;
+        max-width:220px;
+    }
+    .ministry-section{
+        padding:70px 0;
+    }
+    .ministry-bg{
+        height:420px;
+    }
+    .ministry-heading{
+        padding:24px 20px;
+        gap:14px;
+        width:100%;
+    }
+    .ministry-card{
+      margin-top:0;
+    }
+    .cross-icon{
+        font-size:40px;
+    }
+    .ministry-heading h2{
+        font-size:32px;
+    }
+    .ministry-items{
+        padding:10px 20px;
+    }
+    .ministry-item{
+        gap:16px;
+        padding:24px 0;
+    }
+    .ministry-icon{
+        width:54px;
+        height:54px;
+        min-width:54px;
+    }
+    .ministry-content h3{
+        font-size:28px;
+        margin-bottom:10px;
+    }
+    .ministry-content p{
+        font-size:16px;
+        line-height:26px;
+    }
+      .believe-section{
+        padding:70px 0;
+    }
+    .believe-header h2{
+        font-size:52px;
+    }
+    .believe-wrapper{
+        gap:35px;
+    }
+    .believe-image img{
+        height:340px;
+    }
+    .believe-text{
+        font-size:16px;
+        line-height:28px;
+    }
+    .belief-grid{
+        grid-template-columns:1fr;
+    }
+    .belief-card{
+        padding:30px 20px;
+    }
+    .belief-card h3{
+        font-size:24px;
+    }
 }
 @media screen and (max-width: 375px) {
       .weexp img {
@@ -383,5 +572,27 @@
 @media screen and (max-width: 1399px) and (min-width: 992px) {
     .events h3 {
         font-size: 29px;
+    }
+}
+@media(max-width:1200px){
+    .about-title{
+        font-size:80px;
+        line-height:88px;
+    }
+    .about-card{
+        width:90%;
+    }
+    .ministry-card{
+        right:30px;
+    }
+    .ministry-heading h2{
+        font-size:48px;
+    }
+    .believe-wrapper{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+    .belief-grid{
+        grid-template-columns:repeat(2, 1fr);
     }
 }

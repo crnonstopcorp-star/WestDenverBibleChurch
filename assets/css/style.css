@@ -1633,3 +1633,284 @@ span.worsh {
     color: #fff;
     text-decoration: none;
 }
+ .about-section{
+    background:#ffffff;
+    padding:120px 0 180px;
+    overflow:hidden;
+}
+.about-section .container{
+    max-width:1522px;
+    margin:0 auto;
+    padding:0 20px;
+}
+.about-title{
+    font-family: var(--second-font);
+    font-weight:700;
+    font-size:100px;
+    line-height:106px;
+    text-align:center;
+    color:var(--char);
+    margin:0 0 80px;
+    text-transform:uppercase;
+}
+.about-image-wrapper{
+    position:relative;
+    margin:0 auto;
+}
+.about-image-wrapper img{
+    width:100%;
+    height:722px;
+    object-fit:cover;
+    display:block;
+}
+.about-card{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-75px;
+    width:100%;
+    max-width:1262px;
+    background: var(--primary-color);
+    border-radius:40px;
+    padding:45px 60px;
+    text-align:center;
+}
+.about-card h2{
+    font-family: var(--second-font);
+    font-weight:600;
+    font-size:40px;
+    line-height:53px;
+    text-align:center;
+    text-transform:uppercase;
+    color:var(--secondary-color);
+    max-width:1034px;
+    margin:0 auto 24px;
+}
+.about-card p{
+    font-family: var(--main-font);
+    font-weight:400;
+    font-size:18px;
+    line-height:30px;
+    text-align:center;
+    color:var(--reg-color);
+    max-width:922px;
+    margin:0 auto 35px;
+}
+/* Ministry Section */
+.ministry-section{
+    padding:0px 0;
+    background-image:url('./assets/img/ministry-banner.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    overflow:hidden;
+}
+.ministry-section .container{
+    max-width:1400px;
+    margin:0 auto;
+    padding:0 20px;
+}
+.ministry-wrapper{
+    position:relative;
+    min-height:760px;
+}
+.ministry-bg{
+    width:100%;
+    height:760px;
+    overflow:hidden;
+}
+.ministry-bg img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+.ministry-card {
+    position: absolute;
+    right: 60px;
+    width: 100%;
+    max-width: 430px;
+    background: #2A3238;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 30px;
+}
+.ministry-heading {
+    background: #E7E1D7;
+    padding: 28px 34px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 148px;
+    width: 592px;
+}
+.cross-icon{
+    font-size:52px;
+    line-height:1;
+    color:#2F4F46;
+}
+.ministry-heading h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:700;
+    font-size:60px;
+    line-height:100%;
+    text-transform:uppercase;
+    color:rgba(42, 50, 56, 1);
+
+    margin:0;
+}
+.ministry-items{
+    padding:20px 30px;
+}
+.ministry-item{
+    display:flex;
+    align-items:flex-start;
+    gap:22px;
+    padding:30px 0;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+.ministry-item:last-child{
+    border-bottom:none;
+}
+.ministry-icon{
+    width:77px;
+    height:77px;
+    min-width:77px;
+    border-radius:50%;
+    background:#E7E1D7;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.ministry-icon img{
+    width:28px;
+    height:28px;
+    object-fit:contain;
+}
+.ministry-content h3{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:700;
+    font-size:40px;
+    line-height:100%;
+    text-transform:uppercase;
+    color:rgba(231, 225, 215, 1);
+    margin:0 0 12px;
+}
+.ministry-content p{
+    font-family:'Source Sans 3', sans-serif;
+    font-weight:400;
+    font-size:18px;
+    line-height:30px;
+    color:rgba(255, 255, 255, 1);
+    margin:0;
+}
+.believe-section{
+    background:#f5f5f5;
+    padding:120px 0;
+    overflow:hidden;
+}
+.believe-section .container{
+    max-width:1522px;
+    margin:0 auto;
+    padding:0 20px;
+}
+.believe-header{
+    text-align:center;
+    margin-bottom:70px;
+    position:relative;
+}
+.believe-header .sub-title{
+    display:inline-block;
+
+    font-family:var(--main-font);
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    text-decoration:underline;
+    color:#2F4F46;
+    position:relative;
+    z-index:2;
+}
+.believe-header h2 {
+    font-family: var(--main-font);
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: rgba(42, 50, 56, 0.08);
+    margin: 0;
+    margin-top: -10px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.believe-wrapper{
+    display:grid;
+    grid-template-columns: 0.8fr 1.15fr;
+    gap:30px;
+    align-items:center;
+}
+.believe-image img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    display:block;
+}
+.believe-content{
+    width:100%;
+}
+.believe-text{
+    font-family:var(--main-font);
+    font-size:20px;
+    font-weight:400;
+    line-height:32px;
+    color:var_(--char);
+    margin:0 0 45px;
+    max-width:720px;
+}
+.belief-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:18px;
+}
+.belief-card{
+    background:#ffffff;
+    padding:35px 20px;
+    text-align:center;
+    transition:all .3s ease;
+}
+.belief-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+.belief-icon{
+    width:70px;
+    height:70px;
+    margin:0 auto 24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.belief-icon img{
+    width:42px;
+    height:42px;
+    object-fit:contain;
+}
+.belief-card h3{
+    font-family:var(--second-font);
+    font-size:22px;
+    font-weight:700;
+    color:var(--primary-color);
+    margin:0 0 16px;
+}
+.belief-card p{
+    font-family:var(--main-font);
+    font-size:17px;
+    font-weight:400;
+    line-height:24px;
+    color:var(--char);
+    margin:0;
+}
