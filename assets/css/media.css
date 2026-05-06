@@ -98,6 +98,16 @@
     .power,.god-faithful,.living-faith{
         flex:0 0 calc((100% - 18px) / 2);
     }
+    .need-talk h2 {
+        font-size: 45px;
+        margin-bottom: 35px;
+    }
+    .vist-planb p br {
+        display: none;
+    }
+    .contact-loca {
+        height: 328px;
+    }
 }
 @media screen and (max-width:1024px){
     .footer-bottom{
@@ -119,7 +129,7 @@
     .bannmain h1 {
         font-size: 75px;
     }
-    .sermo h2, .whatchr h2 ,.root h2,.expect h2,.message h2,.live h2,.watchhead h2,.teaching-ser h2{
+    .sermo h2, .whatchr h2 ,.root h2,.expect h2,.message h2,.live h2,.watchhead h2,.teaching-ser h2,.vistplan-head h2{
         font-size: 70px;
     }   
     .left h3 {
@@ -185,7 +195,7 @@
         font-size: 35px;
         line-height: 40px;
     }
-     .sermo h2, .whatchr h2 ,.root h2,.expect h2,.message h2,.live h2,.watchhead h2,.teaching-ser h2 {
+     .sermo h2, .whatchr h2 ,.root h2,.expect h2,.message h2,.live h2,.watchhead h2,.teaching-ser h2,.vistplan-head h2 {
         font-size: 55px;
     }
     .bannmain p {
@@ -222,6 +232,16 @@
     .slider-bottom{
         flex-direction:column;
         align-items:flex-start;
+    }
+    .contact-call, .contact-loca, .contact-mail {
+        height: 294px;
+    }
+    .need-talk p {
+      line-height: 150%;
+    }
+    .need-talk h2 {
+        font-size: 35px;
+        margin-bottom: 25px;
     }
 }
 @media screen and (max-width:1199px){

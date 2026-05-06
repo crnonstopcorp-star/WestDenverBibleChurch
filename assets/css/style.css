@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-  --primary-color: #2f4f46;
+  --primary-color: #2F4F46;
   --secondary-color: #E7E1D7;
   --text-color: #000000;
   --reg-color:#fff;
@@ -1439,4 +1439,174 @@ span.fellow {
 }
 .sermon-main {
     margin: 60px 0px;
+}
+.need-talk h2 {
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 60px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.need-talk p {
+    font-family: var(--second-font);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+}
+.need-talk p {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size:var(--paragraph-anchor);
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+}
+.need-talk button{
+    background: var(--secondary-color);
+    box-shadow: 4px 4px 8px 0px #00000026;
+    border-radius: 6px;
+    border: 1px transparent;
+    padding: 14px 18px;
+    margin-top: 30px;
+}
+.need-talk button a {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: var(--paragraph-anchor);
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: var(--char);
+}
+#talk-someone {
+    padding: 100px 0px;
+    text-align: center;
+    background: var(--primary-color);
+}
+#visit-plan {
+    padding: 0px 0px 90px 0px;
+    text-align: center;
+}
+.vistplan-head h2 {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--heading-second);
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #eaebeb;
+}
+.vistplan-head p {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: var(--primary-color);
+    margin-top: -39px;
+}
+.vist-planb p {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 35px;
+    color: #3B3B3B;
+    margin-bottom: 35px;
+}
+.vist-planb button a {
+    font-size: var(--paragraph-anchor);
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+    padding: unset;
+    text-decoration: none;
+    background-image: 41px;
+    font-weight: 600;
+}
+.vist-planb button {
+    background: var(--primary-color);
+    border-radius: 6px;
+    border: 1px transparent;
+    PADDING: 14PX 18PX;
+    box-shadow: 4px 4px 8px 0px #00000026;
+}
+.contact-call, .contact-loca, .contact-mail {
+    background: #2A3238;
+    padding: 30px 30px;
+    height: 100%;
+    border-radius: 14px;
+}
+.services-west {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px 80px 0px;
+}
+.contact-callsvg {
+    background: #fff;
+    border-radius: 37px;
+    width: 34px;
+    padding: 6px 24px;
+}
+.contact-callsvg svg {
+    margin-left: -16px;
+}
+.cont-ban img {
+    width: 100%;
+}
+.cont-ban {
+    padding: 80px 0px;
+}
+.contact-call h3, .contact-loca h3, .contact-mail h3 {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #fff;
+    margin: 25px 0px 20px 0px;
+}
+.contact-call p ,.contact-loca p,.contact-mail p{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 170%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #fff;
+}
+.mail-gsvg ,.contact-locsvg{
+    background: #fff;
+    border-radius: 56px;
+    width: 33px;
+    padding: 11px 24px;
+}
+.mail-gsvg svg,.contact-locsvg svg{
+    margin-left: -12px;
+}
+.contact-call p a ,.contact-loca p a{
+    color: #fff;
+    text-decoration: none;
 }
