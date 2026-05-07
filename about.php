@@ -24,6 +24,7 @@ include('includes/header.php');
                     is to help people grow in their understanding of the Bible and in
                     their relationship with Jesus Christ.
                 </p>
+                <button><a>Plan a Visit</a></button>
             </div>
         </div>
     </div>
@@ -31,7 +32,7 @@ include('includes/header.php');
 
 <!-- Ministry Section -->
 
-<section class="ministry-section">
+<section class="ministry-section" style="background-image: url('./assets/img/ministry-banner.jpg');">
     <div class="container">
         <div class="ministry-wrapper">
             <div class="ministry-card">

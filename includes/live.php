@@ -1,13 +1,13 @@
 <section id="join-live">
     <div class="container">
         <div class="live">
-            <h2>LIVE</h2>
-            <p>Join Us Live</p>
+            <h2>CONTACT</h2>
+            <p>CONTACT</p>
         </div>
         <div class="live-info">
-            <p>While sermons are available online, we would love to see you in person for worship and fellowship.</p>
+            <p>We’d love to hear from you. Reach out to us for any questions, prayer requests, or more information about our church.</p>
             <button class="plan">
-                    <a href="#">Plan a Visit</a>
+                    <a href="/#Contact-Information">CONTACT US</a>
             </button>
         </div>
     </div>

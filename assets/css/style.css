@@ -24,7 +24,7 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 0px;
+    padding:5px 0px;
     position:relative;
     z-index:99;
 }
@@ -177,6 +177,7 @@ button.plan {
     border: 1px transparent;
     PADDING: 14PX 18PX;
     box-shadow: 4px 4px 8px 0px #00000026;
+    margin-top: 15px;
 }
 .bannmain button.plan , .taughtcl button.plan {
     margin-left: 15px;
@@ -186,7 +187,7 @@ button.plan {
     gap: 50px;
 }
 .who-we-are {
-    padding: 70px 0px;
+    padding: 100px 0px 0px 0px;
 }
 .root{
     width: 50%;
@@ -349,16 +350,13 @@ button.tabtn {
     background: var(--char);
     transform: translateY(100px);
 }
-.who-we-are {
-    padding: 70px 0px 0px 0px;
-}
 .sermo {
     padding: 70px 0px 0px 0px;
     margin-bottom: -42px;
 }
-#our-church{
+#our-church {
     background: var(--primary-color);
-    padding: 70px 0px 40px 0px;
+    padding: 117px 0px 40px 0px;
 }
 .whatchr {
     margin-top: 70px;
@@ -489,7 +487,7 @@ p.our {
 }
 #faithful {
     background: var(--secondary-color);
-    padding: 70px 0px;
+    padding: 96px 0px;
     text-align: center;
 }
 .faith h2 {
@@ -519,6 +517,7 @@ p.our {
 .footerimage {
     text-align: center;
     color: var(--reg-color);
+    padding-top : 20px;
 }
 .quick-link h4, .reach-out h4, .join-news h5 {
     color: var(--reg-color);
@@ -584,7 +583,7 @@ p.our {
     font-family: var(--main-font);
     font-weight: 400;
     font-size : var(--paragraph-anchor);
-    line-height: 100%;
+    line-height: 150%;
     letter-spacing: 0%;
     color: var(--reg-color);
 }
@@ -630,7 +629,7 @@ button.subscribe {
 .join1 {
     background: #222222;
     border-radius: 20px;
-    padding: 41px 20px;
+    padding: 25px 20px 6px 20px;
 }
 button.subscribe {
     transform: translateX(-18px);
@@ -642,11 +641,12 @@ button.subscribe {
     font-family: var(--main-font);
     font-weight: 400;
     font-style: Regular;
-    font-size : var(--paragraph-anchor);
+    font-size: var(--paragraph-anchor);
     leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
     color: var(--reg-color);
+    padding-top: 10px;
 }
 .copy p a{
     color: var(--reg-color);
@@ -676,7 +676,8 @@ button.subscribe {
     letter-spacing: 0%;
     text-align: center;
     color: var(--reg-color);
-    margin-bottom: 20px;
+    margin-bottom: 41px;
+    margin-top:16px;
 }
 .quick-link h4, .reach-out h4 ,.service h4{
     font-family: var(--main-font);
@@ -693,7 +694,7 @@ button.subscribe {
 }
 .footer-bottom {
     display: flex;
-    margin-top: 40px;
+    margin: 40px 0px -10px 0px;
 }
 .quick-link,.service {
     width: 50%;
@@ -814,7 +815,7 @@ p.expecta {
     padding-left: 223px;
 }
 #expectations {
-    padding-bottom: 92px;
+    padding: 17px 0px 100px 0px;
 }
 
 /* Contact */
@@ -968,11 +969,11 @@ p.expecta {
     leading-trim: NONE;
     line-height: 25.37px;
     letter-spacing: 0%;
-    color:#8c8c8c;
+    color:#8D8D8D;
 }
-.form-group:nth-child(2) label{
+/* .form-group:nth-child(2) label{
     color:#000 !important;
-}
+} */
 textarea{
     resize:none;
     min-height:60px;
@@ -1061,9 +1062,9 @@ span.fellow {
 /* Sermons page */
 
 /* Join */
-#join-live{
+#join-live {
     text-align: center;
-    padding: 80px 0px;
+    padding: 86px 0px 100px 0px;
 }
 .live h2{
     font-family: var(--main-font);
@@ -1117,10 +1118,10 @@ span.fellow {
     text-decoration: underline;
     text-align: center;
     margin-top: -42px;
-    margin-bottom: 50px;
+    margin-bottom: 77px;
 }
 #latest-message {
-    padding: 80px 0px;
+    padding: 87px 0px;
 }
 .videohead{
     display: flex;
@@ -1263,7 +1264,7 @@ span.fellow {
     margin-top: -40px;
 }
 #new-sermons {
-    padding: 90px 0px;
+    padding: 130px 0px 90px 0px;
     background: var(--char);
 }
 .teaching-para p {
@@ -1274,13 +1275,14 @@ span.fellow {
     line-height: 28px;
     letter-spacing: 0%;
     color: #fff;
+    margin-top : 8px;
 }
 .watch-sun {
     display: flex;
     gap: 50px;
 }
 .watch-sun {
-    margin: 50px 0px;
+    margin: 98px 0px 50px 0px;
 }
 .watchhead h2 {
     font-family: var(--main-font);
@@ -1311,7 +1313,7 @@ span.fellow {
 .watch-join h3 {
     font-family: var(--second-font);
     font-weight: 600;
-    font-size: 36px;
+    font-size: 29px;
     leading-trim: NONE;
     line-height: 41px;
     letter-spacing: 0%;
@@ -1324,7 +1326,6 @@ span.fellow {
     line-height: 41px;
     letter-spacing: 0%;
     color: #fff;
-    margin: 15px 0px;
 }
 .watch-join button a {
     font-size: var(--paragraph-anchor);
@@ -1332,18 +1333,22 @@ span.fellow {
     letter-spacing: 0%;
     text-decoration: none;
     color: var(--char);
+    font-family: var(--main-font);
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
-.watch-join button{
+.watch-join button {
     background: var(--secondary-color);
     box-shadow: 4px 4px 8px 0px #00000026;
-    border-radius: 6px;
+    border-radius: 10px;
     border: 1px transparent;
     padding: 14px 18px;
-    margin-top: 7%;
+    margin-top: 2%;
     margin-bottom: 40px;
 }
 .watchhead {
-    margin-bottom: 25px;
+    margin: 16px 0px 25px 0px;
 }
 .watch-image, .watch-txtimg {
     width: 50%;
@@ -1433,18 +1438,21 @@ span.fellow {
     background:#223c33;
 }
 .slider-bottom{
-    margin-top:40px;
+    margin-top:-13px;
     display:flex;
     align-items:center;
     justify-content:space-between;
     gap:30px;
+    margin-left: 8%;
 }
 .slider-line{
-    flex:1;
-    height:4px;
-    background:#7c7c7c;
-    position:relative;
-    overflow:hidden;
+    flex: 1;
+    height: 7px;
+    background: #D9D9D9;
+    position: relative;
+    overflow: hidden;
+    border-top: 0.1px solid #D9D9D9;
+    border-bottom: 0.1px solid #D9D9D9;
 }
 .slider-arrows{
     display:flex;
@@ -1516,9 +1524,9 @@ span.fellow {
     padding: 100px 0px;
     text-align: center;
     background: var(--primary-color);
+    margin-top: 20px;
 }
 #visit-plan {
-    padding: 0px 0px 90px 0px;
     text-align: center;
 }
 .vistplan-head h2 {
@@ -1596,7 +1604,7 @@ span.fellow {
     width: 100%;
 }
 .cont-ban {
-    padding: 80px 0px;
+    padding: 100px 0px;
 }
 .contact-call h3, .contact-loca h3, .contact-mail h3 {
     font-family: var(--main-font);
@@ -1645,6 +1653,7 @@ span.worsh {
 .outrech {
     display: flex;
     gap: 11px;
+    margin-bottom: 10px;
 }
 .reach-call p {
     line-height: 25px;
@@ -1666,11 +1675,11 @@ span.worsh {
 .about-title{
     font-family: var(--second-font);
     font-weight:700;
-    font-size:100px;
+    font-size: 90px;
     line-height:106px;
     text-align:center;
     color:var(--char);
-    margin:0 0 80px;
+    margin:0 0 55px;
     text-transform:uppercase;
 }
 .about-image-wrapper{
@@ -1719,7 +1728,7 @@ span.worsh {
 /* Ministry Section */
 .ministry-section{
     padding:0px 0;
-    background-image:url('./assets/img/ministry-banner.jpg');
+    /* background-image:url('./assets/img/ministry-banner.jpg'); */
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -1933,4 +1942,22 @@ span.worsh {
     line-height:24px;
     color:var(--char);
     margin:0;
+}
+.about-card button {
+    background: var(--secondary-color);
+    box-shadow: 4px 4px 8px 0px #00000026;
+    border-radius: 6px;
+    border: 1px transparent;
+    padding: 14px 18px;
+}
+.about-card button a {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: var(--paragraph-anchor);
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: var(--char);
 }

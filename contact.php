@@ -25,7 +25,7 @@ include('includes/header.php');
             <p>We love meeting new people! Please let us know if you have any questions or need further information!
                 <br>We look forward to seeing you soon!
             </p>
-            <button><a href="#">Online Connect Card</a></button>
+            <!-- <button><a href="#">Online Connect Card</a></button> -->
         </div>
     </div>
 </section>
@@ -91,7 +91,7 @@ include('includes/header.php');
         <div class="need-talk">
             <h2>NEED TO TALK WITH SOMEONE?</h2>
             <p>Whether you have questions, need prayer, or just want to learn more, our team is here for you.</p>
-            <button><a href="#">Contact Us</a></button>
+            <button><a href="/#Contact-Information">Contact Us</a></button>
         </div>
     </div>
 </section>
