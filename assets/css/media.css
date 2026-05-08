@@ -174,6 +174,9 @@
     .believe-text{
         margin-bottom:35px;
     }
+    .video-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
 }
 @media screen and (max-width:1024px){
     .footer-bottom{
@@ -517,6 +520,12 @@
     }
     .belief-card h3{
         font-size:24px;
+    }
+    .video-grid{
+        grid-template-columns:1fr;
+    }
+    .video-thumb img{
+        height:220px;
     }
 }
 @media screen and (max-width: 375px) {

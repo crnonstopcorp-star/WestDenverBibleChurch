@@ -4,7 +4,7 @@ include('seo/seo.inc.php');
 include('includes/head.php');
 include('includes/header.php');
 ?>
-
+ 
 <section class="about-section">
     <div class="container">
         <h1 class="about-title">

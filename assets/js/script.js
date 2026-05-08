@@ -293,3 +293,151 @@ $(document).ready(function(){
     updateSlider();
 
 });
+
+
+$(document).ready(function () {
+
+    async function fetchYouTubeVideos() {
+
+        const apiKey = "AIzaSyCpCDGWkIctfM-_9xsviKpi8NaFQh_WAC4";
+        const channelId = "UCeFyxpKgF697N1JZc3feBoQ";
+
+        try {
+
+            // =========================
+            // GET UPLOADS PLAYLIST ID
+            // =========================
+            const channelURL =
+                `https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${channelId}&key=${apiKey}`;
+
+            const channelResponse = await fetch(channelURL);
+            const channelData = await channelResponse.json();
+
+            const uploadsPlaylistId =
+                channelData.items[0].contentDetails.relatedPlaylists.uploads;
+
+            // =========================
+            // FETCH ALL VIDEOS
+            // =========================
+            let nextPageToken = "";
+            let allVideos = [];
+
+            do {
+
+                const playlistURL =
+                    `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=50&pageToken=${nextPageToken}&key=${apiKey}`;
+
+                const playlistResponse = await fetch(playlistURL);
+                const playlistData = await playlistResponse.json();
+
+                allVideos = allVideos.concat(playlistData.items);
+
+                nextPageToken = playlistData.nextPageToken || "";
+
+            } while (nextPageToken);
+
+            // =========================
+            // PAGINATION
+            // =========================
+            const videosPerPage = 18;
+            let currentPage = 1;
+
+            function displayVideos(page) {
+
+                const start = (page - 1) * videosPerPage;
+                const end = start + videosPerPage;
+
+                const paginatedVideos = allVideos.slice(start, end);
+
+                let html = "";
+
+                paginatedVideos.forEach(video => {
+
+                    if (!video.snippet || !video.snippet.resourceId) return;
+
+                    const videoId = video.snippet.resourceId.videoId;
+                    const title = video.snippet.title;
+                    const thumbnail = video.snippet.thumbnails.high.url;
+
+                    html += `
+                        <div class="video-card">
+
+                            <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">
+
+                                <div class="video-thumb">
+
+                                    <img src="${thumbnail}" alt="${title}">
+
+                                    <span class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            width="25" height="25" viewBox="0 0 163.861 163.861">
+                                            <g>
+                                                <path d="M34.857 3.613C20.084-4.861 8.107 2.081 8.107 19.106v125.637c0 17.042 11.977 23.975 26.75 15.509L144.67 97.275c14.778-8.477 14.778-22.211 0-30.686L34.857 3.613z"
+                                                    fill="#ffffff">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </span>
+
+                                </div>
+
+                            </a>
+
+                            <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">
+                                <h3>${title}</h3>
+                            </a>
+
+                        </div>
+                    `;
+                });
+
+                $("#videoGrid").html(html);
+
+                renderPagination();
+            }
+
+            function renderPagination() {
+
+                const totalPages = Math.ceil(allVideos.length / videosPerPage);
+
+                let paginationHTML = "";
+
+                for (let i = 1; i <= totalPages; i++) {
+
+                    paginationHTML += `
+                        <button class="page-btn ${i === currentPage ? 'active' : ''}" data-page="${i}">
+                            ${i}
+                        </button>
+                    `;
+                }
+
+                $("#pagination").html(paginationHTML);
+
+                $(".page-btn").on("click", function () {
+
+                    currentPage = Number($(this).data("page"));
+
+                    displayVideos(currentPage);
+
+                    $("html, body").animate({
+                        scrollTop: $("#youtube-videos").offset().top - 100
+                    }, 500);
+
+                });
+            }
+
+            // Initial Load
+            displayVideos(currentPage);
+
+        } catch (error) {
+
+            console.log("YouTube Error:", error);
+
+            $("#videoGrid").html("<p>Unable to load videos.</p>");
+        }
+    }
+
+    fetchYouTubeVideos();
+
+});

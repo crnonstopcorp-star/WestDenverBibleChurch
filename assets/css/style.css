@@ -1978,3 +1978,92 @@ span.worsh {
     text-transform: uppercase;
     color: var(--char);
 }
+#youtube-videos{
+    padding:60px 0;
+}
+.you-gallery h1 {
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 90px;
+    leading-trim: NONE;
+    line-height: 89px;
+    letter-spacing: 0%;
+    color: var(--char);
+    text-transform: uppercase;
+    text-align: center;
+}
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+.video-card{
+    background:#fff;
+}
+.video-thumb{
+    position:relative;
+    overflow:hidden;
+    border-radius:12px;
+}
+.video-thumb img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+}
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background:red;
+    color:#fff;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+}
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+.page-btn{
+    min-width:45px;
+    height:45px;
+    padding:0 14px;
+    border:none;
+    background:#eee;
+    cursor:pointer;
+    border-radius:8px;
+    font-size:16px;
+    transition:0.3s;
+}
+.page-btn.active{
+    background:#2F4F46;
+    color:#fff;
+}
+.page-btn:hover{
+    background:#2F4F46;
+    color:#fff;
+}
+.page-dots{
+    padding:0 5px;
+    font-size:18px;
+    font-weight:bold;
+}
+.page-btn.active{
+    background:#2F4F46;
+    color:#fff;
+}
+.page-btn:hover{
+    background:#2F4F46;
+    color:#fff;
+}
