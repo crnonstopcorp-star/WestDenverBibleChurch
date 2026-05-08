@@ -2067,3 +2067,9 @@ span.worsh {
     background:#2F4F46;
     color:#fff;
 }
+.events img {
+    width: 100%;
+    height: 203px;
+    object-fit: cover;
+    object-position: top;
+}

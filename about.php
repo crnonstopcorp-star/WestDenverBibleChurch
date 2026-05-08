@@ -295,6 +295,20 @@ include('includes/header.php');
                 <p>Join our Communities</p> -->
             </div>
         </div>
+         <div class="reading-s row g-4">
+            <div class="events col-lg-3 col-md-6 col-12">
+                <img src="assets/img/st.jpg" alt="Staff">
+            </div>
+            <div class="events col-lg-3 col-md-6 col-12">
+                <img src="assets/img/lead.jpg" alt="Staff">
+            </div>
+            <div class="events col-lg-3 col-md-6 col-12">
+                <img src="assets/img/lead-sta.jpg" alt="Staff">
+            </div>
+            <div class="events col-lg-3 col-md-6 col-12">
+                <img src="assets/img/lead-staff.jpg" alt="Staff">
+            </div>
+        </div>
     </div>
 </section>
 
