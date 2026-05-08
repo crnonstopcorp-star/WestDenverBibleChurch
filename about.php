@@ -24,7 +24,7 @@ include('includes/header.php');
                     is to help people grow in their understanding of the Bible and in
                     their relationship with Jesus Christ.
                 </p>
-                <button><a>Plan a Visit</a></button>
+                <button><a href="./contact.php">Plan a Visit</a></button>
             </div>
         </div>
     </div>
@@ -152,7 +152,7 @@ include('includes/header.php');
     </div>
 </section>
 
-<!-- Believe Section -->
+<!-- believe -->
 <section class="believe-section">
     <div class="container">
         <div class="believe-header">
@@ -261,6 +261,41 @@ include('includes/header.php');
     </div>
 </section>
 
+
+
 <?php include('includes/live.php'); ?>
+
+<!-- Staff Leadership -->
+
+<section id="reading">
+    <div class="container">
+        <div class="live">
+            <h2>STAFF LEADERSHIP</h2>
+            <p>STAFF LEADERSHIP</p>
+        </div>
+        <div class="reading-s row g-4">
+            <div class="events col-lg-3 col-md-6 col-12">
+                <img src="assets/img/leader.jpg" alt="Staff">
+                <!-- <h3>Bible Reading</h3>
+                <p>Explore the bible with Us</p> -->
+            </div>
+            <div class="events col-lg-3 col-md-6 col-12">
+                <img src="assets/img/sleader.jpg" alt="Staff">
+                <!-- <h3>OUR EVENTS</h3>
+                <p>Take Part</p> -->
+            </div>
+            <div class="events col-lg-3 col-md-6 col-12">
+                <img src="assets/img/staf.jpg" alt="Staff">
+                <!-- <h3>OUR CHURCH</h3>
+                <p>Locations</p> -->
+            </div>
+            <div class="events col-lg-3 col-md-6 col-12">
+                <img src="assets/img/member.jpg" alt="Staff">
+                <!-- <h3>OUR GROUPS</h3>
+                <p>Join our Communities</p> -->
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php include('includes/footer.inc.php'); ?>

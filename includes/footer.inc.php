@@ -13,10 +13,10 @@
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="./sermons.php">Sermons</a></li>
-                        <li><a href="#">New Here</a></li>
+                        <!-- <li><a href="#">New Here</a></li> -->
                         <li><a href="./about.php">Who We Are</a></li>
-                        <li><a href="#">Get Connected</a></li>
-                        <li><a href="./contact.php">Contact</a></li>
+                        <li><a href="./contact.php">Get Connected</a></li>
+                        <!-- <li><a href="./contact.php">Contact</a></li> -->
                     </ul>
                 </div>
                 <div class="reach-out">
@@ -99,7 +99,7 @@
 
         <div class="footer-b">
             <div class="copy">
-                <p>© <a href="/">West Denver Bible Church </a>. All rights reserved.</p>
+                <p><?php echo date("Y"); ?> © <a href="/">West Denver Bible Church</a>. All rights reserved.</p>
             </div>
             <div class="ptuse">
                 <div class="privacy">

@@ -13,11 +13,11 @@ include('includes/header.php');
                 <h1>Biblical teaching to<br> strengthen your faith.</h1>
                 <p>Our sermons explain Scripture clearly and faithfully.</p>
                 <button>
-                    <a href="#">Watch Latest Sermon</a>
+                    <a href="https://www.youtube.com/@westdenverbiblechurch" target="_blank">Watch Latest Sermon</a>
                 </button>
-                <button class="plan">
+                <!-- <button class="plan">
                     <a href="#">Join Livestream</a>
-                </button>
+                </button> -->
             </div>
             <div class="bannmain2">
             </div>
@@ -30,18 +30,21 @@ include('includes/header.php');
         <div class="message">
             <h2>LATEST MESSAGE</h2>
             <p>LATEST MESSAGE</p>
-            <iframe width="100%" height="70%" src="https://www.youtube.com/embed/vkQ2YwjT6Fc?si=YxMjsMrN2olMxxsH"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+              <iframe
+            width="100%"
+            height="70%"
+            src="https://www.youtube.com/embed/videoseries?list=UUeFyxpKgF697N1JZc3feBoQ"
+            title="YouTube videos"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
         <div class="videohead">
             <div class="videotitle">
                 <h3>Learning to Trust God in Difficult Times</h3>
                 <h4>Pastor John Smith | March 2026</h4>
             </div>
             <div class="videobut">
-                <button><a href="">Watch Sermons</a></button>
+                <button><a href="https://www.youtube.com/@westdenverbiblechurch" target="_blank">Watch Sermons</a></button>
             </div>
         </div>
     </div>
@@ -56,7 +59,7 @@ include('includes/header.php');
     </div>
 </section>
 
-<section id="reading">
+<!-- <section id="reading">
     <div class="container">
         <div class="reading-s row g-4">
             <div class="events col-lg-3 col-md-6 col-12">
@@ -81,7 +84,7 @@ include('includes/header.php');
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- NEW SERMONS -->
 
@@ -105,7 +108,7 @@ include('includes/header.php');
                     <div class="sermon-content">
                         <h2>LIVING BY FAITH</h2>
                         <p>Pastor John Smith - 25 feb</p>
-                        <button><a href="#">Watch Sermons</a></button>
+                        <button><a href="https://www.youtube.com/@westdenverbiblechurch" target="_blank">Watch Sermons</a></button>
                     </div>
                 </div>
                 <div class="power">
@@ -114,7 +117,7 @@ include('includes/header.php');
                     <div class="sermon-content">
                         <h2>THE POWER OF GRACE</h2>
                         <p>Pastor John Smith - 25 feb</p>
-                        <button><a href="#">Watch Sermons</a></button>
+                        <button><a href="https://www.youtube.com/@westdenverbiblechurch" target="_blank">Watch Sermons</a></button>
                     </div>
                 </div>
                 <div class="god-faithful">
@@ -123,7 +126,7 @@ include('includes/header.php');
                     <div class="sermon-content">
                         <h2>GOD’S FAITHFULNESS</h2>
                         <p>Pastor John Smith - 25 feb</p>
-                        <button><a href="#">Watch Sermons</a></button>
+                        <button><a href="https://www.youtube.com/@westdenverbiblechurch" target="_blank">Watch Sermons</a></button>
                     </div>
                 </div>
                 <!-- Extra Slides -->
@@ -133,7 +136,7 @@ include('includes/header.php');
                     <div class="sermon-content">
                         <h2>WALK IN FAITH</h2>
                         <p>Pastor John Smith - 25 feb</p>
-                        <button><a href="#">Watch Sermons</a></button>
+                        <button><a href="https://www.youtube.com/@westdenverbiblechurch" target="_blank">Watch Sermons</a></button>
                     </div>
                 </div>
             </div>
@@ -158,7 +161,7 @@ include('includes/header.php');
             </div>
 
         </div>
-        <div class="watch-sun">
+        <!-- <div class="watch-sun">
             <div class="watch-image">
                 <img src="assets/img/watchwe.png" alt="">
             </div>
@@ -173,7 +176,7 @@ include('includes/header.php');
                     <button><a href="#">Watch Livestream</a></button>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 

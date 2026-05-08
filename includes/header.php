@@ -6,7 +6,7 @@
                 <a href="/"><img src="assets/img/header-logo.png" alt="logo"></a>
             </div>
             <div class="header-center">
-                <p><span>SERMONS |</span><span class="lstream"> Live Stream HERE </span>- 10-11</p>
+                <p><span>SERMONS |</span><span class="lstream"> VIDEOS HERE </span>- 10-11</p>
                 <div class="divider"></div>
                 <p><span class="lstream">Prayer</span> Request Form <span>HERE</span></p>
             </div>

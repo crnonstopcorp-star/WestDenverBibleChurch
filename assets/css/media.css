@@ -32,7 +32,7 @@
         height: 650px;
         object-fit: fill;
     }
-    .bannmain h1 br {
+    .bannmain h1 br{
         display: none;
     }
     .taughtcl {
@@ -75,7 +75,7 @@
         font-size: 22px;
         margin-top: 21px;
     }
-    .bannmain h1 {
+    .bannmain h1 ,.you-gallery h1,.about-title{
         font-size: 45px !important;
         line-height: 50px;
     }
@@ -192,7 +192,7 @@
     .faith h2{
         font-size: 55px;
     }
-    .bannmain h1 {
+    .bannmain h1 ,.you-gallery h1,.about-title{
         font-size: 75px;
     }
     .sermo h2, .whatchr h2 ,.root h2,.expect h2,.message h2,.live h2,.watchhead h2,.teaching-ser h2,.vistplan-head h2{
@@ -268,7 +268,7 @@
         font-size: 18px;
         margin-top: 21px;
     }
-    .bannmain h1 {
+    .bannmain h1 ,.you-gallery h1 ,.about-title {
         font-size: 35px !important;
         line-height: 35px;
     }
@@ -385,7 +385,7 @@
     .item.active .content {
         display: block;
     }
-    .bannmain h1 {
+    .bannmain h1 , .you-gallery h1 ,.about-title {
         font-size: 55px;
         line-height: 50px;
     }
@@ -545,7 +545,7 @@
     .left span{
         font-size: 75px;
     }
-    .bannmain h1 {
+    .bannmain h1 ,.you-gallery h1 ,.about-title{
         font-size: 35px !important;
         line-height: 35px;
     }

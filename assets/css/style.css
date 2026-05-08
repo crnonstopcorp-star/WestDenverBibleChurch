@@ -13,6 +13,9 @@
   --heading-third : 50px;
   --paragraph-anchor : 18px;
 }
+a {
+    text-decoration: none;
+}
 /* Header */
 
 .header{
@@ -694,7 +697,7 @@ button.subscribe {
 }
 .footer-bottom {
     display: flex;
-    margin: 40px 0px -10px 0px;
+    margin: 40px 0px 40px 0px;
 }
 .quick-link,.service {
     width: 50%;
@@ -1217,7 +1220,13 @@ span.fellow {
 }
 #reading {
     background: #F8F8F8;
-    padding-bottom: 80px;
+    padding: 100px 0px;
+}
+.reading-s {
+    margin-top: 25px;
+}
+.you-gallery {
+    padding: 100px 0px 10px 0px;
 }
 .teaching {
     display: flex;
@@ -1433,9 +1442,6 @@ span.fellow {
     line-height: 28px;
     letter-spacing: 0%;
     color: #3A3A3A;
-}
-.sermon-content a:hover{
-    background:#223c33;
 }
 .slider-bottom{
     margin-top:-13px;
@@ -1959,5 +1965,16 @@ span.worsh {
     line-height: 100%;
     letter-spacing: 0%;
     text-decoration: none;
+    color: var(--char);
+}
+.video-card h3 {
+    margin-top: 15px;
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 23px;
+    leading-trim: NONE;
+    letter-spacing: 0%;
+    text-transform: uppercase;
     color: var(--char);
 }
