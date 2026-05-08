@@ -12,7 +12,7 @@ include('includes/header.php');
             BIBLE CHURCH
         </h1>
         <div class="about-image-wrapper">
-            <img src="./assets/img/about-banner.jpg" alt="West Denver Bible Church">
+            <img src="./assets/img/denver-b.png" alt="West Denver Bible Church">
             <div class="about-card">
                 <h2>
                     A CHURCH COMMITTED TO FAITHFULLY TEACHING
@@ -161,7 +161,7 @@ include('includes/header.php');
         </div>
         <div class="believe-wrapper">
             <div class="believe-image">
-                <img src="./assets/img/believe.jpg" alt="What We Believe">
+                <img src="./assets/img/believe1.jpg" alt="What We Believe">
             </div>
             <div class="believe-content">
                 <p class="believe-text">
@@ -191,8 +191,8 @@ include('includes/header.php');
                             of Scripture
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet,
-                            consectetur
+                            God’s Word is our foundation for truth, faith, and daily living.
+
                         </p>
                     </div>
 
@@ -210,8 +210,8 @@ include('includes/header.php');
                             Through Christ
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet,
-                            consectetur
+                            Salvation is found through faith in Jesus Christ alone.
+
                         </p>
                     </div>
 
@@ -232,8 +232,8 @@ include('includes/header.php');
                             Community
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet,
-                            consectetur
+                            We grow together through worship, fellowship, and prayer.
+
                         </p>
                     </div>
 
@@ -251,8 +251,8 @@ include('includes/header.php');
                             Faith
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet,
-                            consectetur
+                            We seek to become more like Christ through His Word.
+
                         </p>
                     </div>
                 </div>

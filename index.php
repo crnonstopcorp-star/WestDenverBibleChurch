@@ -6,7 +6,7 @@ include('includes/header.php');
 ?>
 
 <section id="banner-west"
-    style="background: linear-gradient(0.43deg, rgba(0,0,0,0.78) 0.33%, rgba(0,0,0,0) 98.22%), url('assets/img/banner.png'); background-size: cover; background-position: center; display: flex; align-items: center;">
+    style="background: linear-gradient(0.43deg, rgba(0,0,0,0.78) 0.33%, rgba(0,0,0,0) 98.22%), url('assets/img/home.png'); background-size: cover; background-position: center; display: flex; align-items: center;">
     <div class="container">
         <div class="banner">
             <div class="bannmain">
@@ -51,7 +51,7 @@ include('includes/header.php');
             <div class="root">
                 <div class="images">
                     <div class="main-img">
-                        <img src="assets/img/rooted.png" alt="Speaker">
+                        <img src="assets/img/rootedi.png" alt="Speaker">
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@ include('includes/header.php');
         </div>
         <div class="god-word">
             <div class="taughtcl">
-                <img src="assets/img/god-word.png" alt="GOd's Word">
+                <img src="assets/img/here.png" alt="GOd's Word">
             </div>
             <div class="taughtcl">
                 <h3>Hear God’s Word <br> Taught Clearly</h3>
@@ -182,7 +182,7 @@ include('includes/header.php');
         </div>
         <div class="what-ex">
             <div class="weexp">
-                <img src="assets/img/expect.png" alt="Expectations">
+                <img src="assets/img/expecta.png" alt="Expectations">
             </div>
             <div class="toexpext">
                 <div class="expact">
@@ -261,7 +261,7 @@ include('includes/header.php');
                         </div>
                     </div>
                     <div class="extwoimg">
-                        <img src="assets/img/expectation.png" alt="Expectations">
+                        <img src="assets/img/ex.png" alt="Expectations">
                     </div>
                 </div>
             </div>
