@@ -12,7 +12,7 @@ include('includes/header.php');
             BIBLE CHURCH
         </h1>
         <div class="about-image-wrapper">
-            <img src="./assets/img/denver-b.png" alt="West Denver Bible Church">
+            <img src="./assets/img/denver-b.jpeg" alt="West Denver Bible Church">
             <div class="about-card">
                 <h2>
                     A CHURCH COMMITTED TO FAITHFULLY TEACHING

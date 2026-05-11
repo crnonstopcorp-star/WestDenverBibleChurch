@@ -8,7 +8,7 @@ include('includes/header.php');
 <section id="contact-banner">
     <div class="container">
         <div class="cont-ban">
-            <img src="assets/img/contact-banner.png" alt="contact banner">
+            <img src="assets/img/contact.jpeg" alt="contact banner">
         </div>
     </div>
 </section>

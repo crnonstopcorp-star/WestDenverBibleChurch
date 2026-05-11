@@ -6,7 +6,7 @@ include('includes/header.php');
 ?>
 
 <section id="banner-west"
-    style="background: linear-gradient(0.43deg, rgba(0,0,0,0.78) 0.33%, rgba(0,0,0,0) 98.22%), url('assets/img/home.png'); background-size: cover; background-position: center; display: flex; align-items: center;">
+    style="background: linear-gradient(0.43deg, rgba(0,0,0,0.78) 0.33%, rgba(0,0,0,0) 98.22%), url('assets/img/home.jpeg'); background-size: cover; background-position: center; display: flex; align-items: center;">
     <div class="container">
         <div class="banner">
             <div class="bannmain">
@@ -51,7 +51,7 @@ include('includes/header.php');
             <div class="root">
                 <div class="images">
                     <div class="main-img">
-                        <img src="assets/img/rootedi.png" alt="Speaker">
+                        <img src="assets/img/rooted.jpeg" alt="Speaker">
                     </div>
                 </div>
             </div>

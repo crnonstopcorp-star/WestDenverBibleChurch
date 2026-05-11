@@ -177,6 +177,10 @@
     .video-grid{
         grid-template-columns:repeat(2,1fr);
     }
+    .about-card {
+        width: 90%;
+        margin-left: 27px;
+    }
 }
 @media screen and (max-width:1024px){
     .footer-bottom{
@@ -341,6 +345,9 @@
     }
     .believe-header .sub-title{
         font-size:12px;
+    }
+    .about-card {
+        margin-left: 24px;
     }
 }
 @media screen and (max-width:1199px){
@@ -561,6 +568,9 @@
     .watch-image img {
         width: 100%;
         height: 25%;
+    }
+        .about-card{
+        margin-left: 16px;
     }
 }
 @media screen and (max-width:320px){

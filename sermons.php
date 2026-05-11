@@ -6,7 +6,7 @@ include('includes/header.php');
 ?>
 
 <section id="banner-west"
-    style="background: linear-gradient(0.43deg, rgba(0,0,0,0.78) 0.33%, rgba(0,0,0,0) 98.22%), url('assets/img/sermon.png'); background-size: cover; background-position: center; display: flex; align-items: center;">
+    style="background: linear-gradient(0.43deg, rgba(0,0,0,0.78) 0.33%, rgba(0,0,0,0) 98.22%), url('assets/img/sermon-s.jpeg'); background-size: cover; background-position: center; display: flex; align-items: center;">
     <div class="container">
         <div class="banner">
             <div class="bannmain">
