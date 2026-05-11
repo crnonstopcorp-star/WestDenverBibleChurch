@@ -45,7 +45,7 @@ include('includes/header.php');
                     </div>
                     <h3>Phone</h3>
                     <p><a href="tel:(303) 995-5464">(303) 995-5464</a></p>
-                    <p><a href="tel:+91 0000 0000 00">+91 0000 0000 00</a></p>
+                    <!-- <p><a href="tel:+91 0000 0000 00">+91 0000 0000 00</a></p> -->
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12">
