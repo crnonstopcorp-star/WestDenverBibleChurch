@@ -7,7 +7,7 @@
         <div class="live-info">
             <p>We’d love to hear from you. Reach out to us for any questions, prayer requests, or more information about our church.</p>
             <button class="plan">
-                    <a href="/#Contact-Information">CONTACT US</a>
+                    <a href="/#Contact-Information">Contact Us</a>
             </button>
         </div>
     </div>

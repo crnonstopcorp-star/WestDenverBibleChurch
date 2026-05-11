@@ -277,7 +277,7 @@
     }
     .bannmain h1 ,.you-gallery h1 ,.about-title {
         font-size: 35px !important;
-        line-height: 35px;
+        line-height: 38px !important;
     }
     .message p {
         margin-top: -33px;

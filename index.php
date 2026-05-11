@@ -106,8 +106,7 @@ include('includes/header.php');
                 <div class="icon">−</div>
             </div>
             <div class="content">
-                <p>We gather as a church family to honor God with reverence and gratitude. Our worship is simple and
-                    sincere, focused on glorifying God and responding to His truth with thankful hearts.</p>
+                <p>We gather as a church family to honor God with reverence and gratitude. Our worship is centered on Scripture, prayer, and the glory of Christ as we respond to His truth with thankful hearts.</p>
                 <img src="assets/img/workship.png" alt="Workship">
             </div>
         </div>
@@ -121,8 +120,7 @@ include('includes/header.php');
                 <div class="icon">+</div>
             </div>
             <div class="content">
-                <p>We gather as a church family to honor God with reverence and gratitude. Our worship is simple and
-                    sincere, focused on glorifying God and responding to His truth with thankful hearts.</p>
+                <p>We boldly proclaim the Gospel of Jesus Christ through faithful teaching, preaching, and everyday witness. Our desire is to make God’s Word known with clarity, truth, and grace.</p>
                 <img src="assets/img/workship.png" alt="Workship">
             </div>
         </div>
@@ -136,8 +134,7 @@ include('includes/header.php');
                 <div class="icon">+</div>
             </div>
             <div class="content">
-                <p>We gather as a church family to honor God with reverence and gratitude. Our worship is simple and
-                    sincere, focused on glorifying God and responding to His truth with thankful hearts.</p>
+                <p>We are committed to growing together as disciples of Christ through biblical teaching, prayer, fellowship, and obedience to God’s Word. Spiritual growth happens in community as we encourage one another in faith.</p>
                 <img src="assets/img/workship.png" alt="Workship">
             </div>
         </div>
@@ -151,8 +148,7 @@ include('includes/header.php');
                 <div class="icon">+</div>
             </div>
             <div class="content">
-                <p>We gather as a church family to honor God with reverence and gratitude. Our worship is simple and
-                    sincere, focused on glorifying God and responding to His truth with thankful hearts.</p>
+                <p>We desire to continually grow in our love for God, our understanding of Scripture, and our likeness to Christ. Through the work of the Holy Spirit, we pursue lives marked by humility, holiness, and faithfulness.</p>
                 <img src="assets/img/workship.png" alt="Workship">
             </div>
         </div>
@@ -166,8 +162,7 @@ include('includes/header.php');
                 <div class="icon">+</div>
             </div>
             <div class="content">
-                <p>We gather as a church family to honor God with reverence and gratitude. Our worship is simple and
-                    sincere, focused on glorifying God and responding to His truth with thankful hearts.</p>
+                <p>We seek to live on mission by sharing the hope of the Gospel in our homes, neighborhoods, workplaces, and around the world. As followers of Christ, we are called to serve others and make disciples wherever God leads us.</p>
                 <img src="assets/img/workship.png" alt="Workship">
             </div>
         </div>

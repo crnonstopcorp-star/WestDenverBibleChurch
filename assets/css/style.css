@@ -1673,11 +1673,11 @@ span.worsh {
     padding:120px 0 180px;
     overflow:hidden;
 }
-.about-section .container{
+/* .about-section .container{
     max-width:1522px;
     margin:0 auto;
     padding:0 20px;
-}
+} */
 .about-title{
     font-family: var(--second-font);
     font-weight:700;
@@ -1703,7 +1703,7 @@ span.worsh {
     left:50%;
     transform:translateX(-50%);
     bottom:-75px;
-    width:100%;
+    width:90%;
     max-width:1262px;
     background: var(--primary-color);
     border-radius:40px;
@@ -1777,7 +1777,8 @@ span.worsh {
     align-items: center;
     gap: 18px;
     height: 148px;
-    width: 592px;
+    width: 564px;
+    margin-right: 30px;
 }
 .cross-icon{
     font-size:52px;
@@ -1802,7 +1803,7 @@ span.worsh {
     align-items:flex-start;
     gap:22px;
     padding:30px 0;
-    border-bottom:1px solid rgba(255,255,255,0.2);
+    border-bottom:1px solid #fff;
 }
 .ministry-item:last-child{
     border-bottom:none;
@@ -1844,11 +1845,11 @@ span.worsh {
     padding:120px 0;
     overflow:hidden;
 }
-.believe-section .container{
+/* .believe-section .container{
     max-width:1522px;
     margin:0 auto;
     padding:0 20px;
-}
+} */
 .believe-header{
     text-align:center;
     margin-bottom:70px;
@@ -1945,8 +1946,16 @@ span.worsh {
     font-size:17px;
     font-weight:400;
     line-height:24px;
-    color:var(--char);
+    color:#303030;
     margin:0;
+}
+.live-info p {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: #000;
 }
 .about-card button {
     background: var(--secondary-color);
