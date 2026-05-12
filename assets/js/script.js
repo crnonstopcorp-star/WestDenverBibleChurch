@@ -445,84 +445,84 @@ $(document).ready(function () {
 
 // LiveStram
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
-    const API_KEY = "AIzaSyCpCDGWkIctfM-_9xsviKpi8NaFQh_WAC4";
-    const CHANNEL_ID = "UCeFyxpKgF697N1JZc3feBoQ";
+//     const API_KEY = "AIzaSyCpCDGWkIctfM-_9xsviKpi8NaFQh_WAC4";
+//     const CHANNEL_ID = "UCeFyxpKgF697N1JZc3feBoQ";
 
-    const container = document.getElementById("youtube-live");
+//     const container = document.getElementById("youtube-live");
 
-    async function loadLiveOrLatestVideo() {
+//     async function loadLiveOrLatestVideo() {
 
-        try {
+//         try {
 
-            // =========================
-            // CHECK LIVE STREAM
-            // =========================
+//             // =========================
+//             // CHECK LIVE STREAM
+//             // =========================
 
-            const liveUrl =
-                `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&eventType=live&type=video&key=${API_KEY}`;
+//             const liveUrl =
+//                 `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&eventType=live&type=video&key=${API_KEY}`;
 
-            const liveResponse = await fetch(liveUrl);
-            const liveData = await liveResponse.json();
+//             const liveResponse = await fetch(liveUrl);
+//             const liveData = await liveResponse.json();
 
-            let videoId = "";
+//             let videoId = "";
 
-            // LIVE VIDEO FOUND
+//             // LIVE VIDEO FOUND
 
-            if (liveData.items && liveData.items.length > 0) {
+//             if (liveData.items && liveData.items.length > 0) {
 
-                videoId = liveData.items[0].id.videoId;
+//                 videoId = liveData.items[0].id.videoId;
 
-            } else {
+//             } else {
 
-                // =========================
-                // GET LATEST VIDEO
-                // =========================
+//                 // =========================
+//                 // GET LATEST VIDEO
+//                 // =========================
 
-                const latestUrl =
-                    `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&order=date&maxResults=1&type=video&key=${API_KEY}`;
+//                 const latestUrl =
+//                     `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&order=date&maxResults=1&type=video&key=${API_KEY}`;
 
-                const latestResponse = await fetch(latestUrl);
-                const latestData = await latestResponse.json();
+//                 const latestResponse = await fetch(latestUrl);
+//                 const latestData = await latestResponse.json();
 
-                if (latestData.items.length > 0) {
+//                 if (latestData.items.length > 0) {
 
-                    videoId = latestData.items[0].id.videoId;
+//                     videoId = latestData.items[0].id.videoId;
 
-                }
-            }
+//                 }
+//             }
 
-            // =========================
-            // SHOW VIDEO
-            // =========================
+//             // =========================
+//             // SHOW VIDEO
+//             // =========================
 
-            if (videoId) {
+//             if (videoId) {
 
-                container.innerHTML = `
-                    <iframe
-                        width="100%"
-                        height="600"
-                        src="https://www.youtube.com/embed/${videoId}"
-                        title="YouTube Video Player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                `;
-            }
+//                 container.innerHTML = `
+//                     <iframe
+//                         width="100%"
+//                         height="600"
+//                         src="https://www.youtube.com/embed/${videoId}"
+//                         title="YouTube Video Player"
+//                         frameborder="0"
+//                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+//                         allowfullscreen>
+//                     </iframe>
+//                 `;
+//             }
 
-        } catch (error) {
+//         } catch (error) {
 
-            console.log("Error fetching YouTube videos:", error);
+//             console.log("Error fetching YouTube videos:", error);
 
-        }
-    }
+//         }
+//     }
 
-    // INITIAL LOAD
-    loadLiveOrLatestVideo();
+//     // INITIAL LOAD
+//     loadLiveOrLatestVideo();
 
-    // AUTO REFRESH EVERY 1 MINUTE
-    setInterval(loadLiveOrLatestVideo, 60000);
+//     // AUTO REFRESH EVERY 1 MINUTE
+//     setInterval(loadLiveOrLatestVideo, 60000);
 
-});
+// });
