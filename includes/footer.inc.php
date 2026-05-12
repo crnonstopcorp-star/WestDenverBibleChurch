@@ -44,7 +44,7 @@
                                 <path d="M20 0H0V16H20V0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="white" />
                             </svg>
                         </div>
-                        <div class="reach-call">
+                        <div class="reach-call reachc-mail">
                             <p><a href="mailto:info@WestDenverBibleChurch.org">info@WestDenverBibleChurch.org</a></p>
                         </div>
                     </div>

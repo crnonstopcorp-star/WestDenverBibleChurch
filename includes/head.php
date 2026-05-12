@@ -3,9 +3,9 @@ include('includes/config.inc.php');
 include('seo/seo.inc.php'); 
 ?>
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/header-logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
