@@ -1,5 +1,5 @@
 <section id="banner-footer"
-    style="background: url('assets/img/footer-img.png'); background-size: cover; background-position: center; display: flex; align-items: center;">
+    style="background: url('assets/img/footer-img.png'); background-size: contain; background-position: center; display: flex; align-items: center;">
     <div class="container">
         <div class="footerimage">
             <a href="/"><img src="assets/img/footer-logo.png" alt="Footer logo"></a>

@@ -106,6 +106,69 @@ include('includes/header.php');
     </div>
 </section> -->
 
+<!-- <section class="live-stream-section">
+    <div class="container">
+         <h2>Livestream</h2>
+        <p>Livestream</p>   
+        <div id="youtube-live"></div>
+    </div>
+</section>
 
+<style>
+
+.live-stream-section{
+    width:100%;
+    padding:60px 0;
+}
+
+.live-stream-section iframe{
+    width:100%;
+    height:650px;
+    border:none;
+    border-radius:12px;
+}
+
+.live-message{
+    text-align:center;
+    font-size:28px;
+    font-weight:700;
+    padding:100px 20px;
+}
+
+@media(max-width:768px){
+
+    .live-stream-section iframe{
+        height:300px;
+    }
+
+}
+
+</style>
+
+<script>
+
+const CHANNEL_ID = "UCeFyxpKgF697N1JZc3feBoQ";
+
+const container = document.getElementById("youtube-live");
+
+function loadLiveStream() {
+
+    // =========================
+    // DIRECT LIVE STREAM EMBED
+    // =========================
+    container.innerHTML = `
+        <iframe
+            src="https://www.youtube.com/embed/live_stream?channel=${CHANNEL_ID}&autoplay=1&mute=1"
+            title="West Denver Bible Church Live Stream"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    `;
+}
+
+// LOAD LIVE STREAM
+loadLiveStream();
+
+</script> -->
 
 <?php include('includes/footer.inc.php'); ?>

@@ -529,6 +529,7 @@ p.our {
 .quick-link ul {
     padding-left: 18px;
     color: var(--reg-color);
+    margin-top: -9px;
 }
 .quick-link ul li {
     font-family: var(--main-font);
@@ -562,6 +563,7 @@ p.our {
     line-height: 26px;
     letter-spacing: 0%;
     color: var(--reg-color);
+    margin-top:-2px;
 }
 .service p span {
     font-family: var(--main-font);
@@ -2125,4 +2127,8 @@ span.worsh {
 }
 .reachc-mail p {
     margin-top: -4px;
+}
+.footerimage hr, .footerhr hr {
+    color: var(--secondary-color);
+    opacity: 0.6;
 }
