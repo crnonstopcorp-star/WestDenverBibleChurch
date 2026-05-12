@@ -539,6 +539,9 @@
       .weexp img {
         height: 43vh;
     }
+    .contact-call, .contact-loca, .contact-mail {
+        height: 330px;
+    }
     .extwoimg img{
         height: 47% !important;
         margin-top: 11px;
