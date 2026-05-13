@@ -480,8 +480,8 @@
         margin-bottom: unset;
     }
     .bannmain h1 , .you-gallery h1 ,.about-title {
-        font-size: 55px;
-        line-height: 50px;
+        font-size: 45px !important;
+        line-height: 50px !important;
     }
     .mobile-menu{
         flex-direction:column;
@@ -591,7 +591,7 @@
         padding:70px 0;
     }
     .believe-header h2{
-        font-size:52px;
+        font-size:55px !important;
     }
     .believe-wrapper{
         gap:35px;

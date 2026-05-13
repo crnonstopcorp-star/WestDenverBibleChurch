@@ -1615,7 +1615,7 @@ span.fellow {
     width: 100%;
 }
 .cont-ban {
-    padding: 125px 0px 100px 0px;
+    padding: 125px 0px 125px 0px;
 }
 .contact-call h3, .contact-loca h3, .contact-mail h3 {
     font-family: var(--main-font);
@@ -1625,7 +1625,7 @@ span.fellow {
     letter-spacing: 0%;
     text-align: left;
     color: #fff;
-    margin: 25px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
 }
 .contact-call p ,.contact-loca p,.contact-mail p{
     font-family: var(--main-font);
