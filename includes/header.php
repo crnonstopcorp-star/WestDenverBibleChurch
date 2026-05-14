@@ -43,11 +43,24 @@
         </div>
         <!-- DROPDOWN MENU -->
         <div class="mobile-menu" id="mobileMenu">
-            <a href="/">Home</a>
-            <a href="./sermons.php">Sermons</a>
-            <a href="./about.php">About</a>
-            <a href="#">Giving</a>
-            <a href="./contact.php">Contact</a>
-        </div>
+    <a href="/" class="<?= basename($_SERVER['PHP_SELF']) == 'index.php' ? 'menu-active' : '' ?>">Home</a>
+
+    <a href="./sermons.php"
+        class="<?= basename($_SERVER['PHP_SELF']) == 'sermons.php' ? 'menu-active' : '' ?>">
+        Sermons
+    </a>
+
+    <a href="./about.php"
+        class="<?= basename($_SERVER['PHP_SELF']) == 'about.php' ? 'menu-active' : '' ?>">
+        About
+    </a>
+
+    <a href="#">Giving</a>
+
+    <a href="./contact.php"
+        class="<?= basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'menu-active' : '' ?>">
+        Contact
+    </a>
+</div>
     </div>
 </header>

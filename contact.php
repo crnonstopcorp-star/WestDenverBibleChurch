@@ -98,13 +98,13 @@ include('includes/header.php');
 
 <!-- LiveStram -->
 
-<!-- <section class="live-stream-section">
+<section class="live-stream-section">
     <div class="container">
         <h2>Livestream</h2>
         <p>Livestream</p>
         <div id="youtube-live"></div>
     </div>
-</section> -->
+</section> 
 
 <!-- <section class="live-stream-section">
     <div class="container">
@@ -112,9 +112,9 @@ include('includes/header.php');
         <p>Livestream</p>   
         <div id="youtube-live"></div>
     </div>
-</section>
+</section> -->
 
-<style>
+<!-- <style>
 
 .live-stream-section{
     width:100%;

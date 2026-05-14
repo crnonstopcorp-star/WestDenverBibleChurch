@@ -34,6 +34,13 @@ a {
 .logo img{
     width:85px;
 }
+.mobile-menu a.menu-active {
+    color: #d7af87;
+}
+.mobile-menu a:hover,
+.mobile-menu a.menu-active {
+    color: #d7af87;
+}
 .mobile-menu a.active{
     font-weight: bold !important;
 }
