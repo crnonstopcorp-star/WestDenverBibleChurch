@@ -12,12 +12,15 @@ include('includes/header.php');
             <div class="bannmain">
                 <h1>LEARN WHAT THE <br> BIBLE ACTUALLY SAYS</h1>
                 <p>Mercied by God, Born to a Living Hope (1 Peter 1:3)</p>
-                <button>
-                    <a href="./sermons.php">Watch Latest Sermon</a>
+                <a href="./sermons.php"><button>
+                    Watch Latest Sermon
                 </button>
                 <button class="plan">
                     <a href="./contact.php">Plan a Visit</a>
                 </button>
+                <a href="/contact.php/#live-stream-section" target="_blank" class="w-live"><button>
+                    Watch Live
+                </button></a>
             </div>
             <div class="bannmain2">
             </div>
@@ -44,14 +47,14 @@ include('includes/header.php');
                 <button class="plan">
                     <a href="./about.php" class="btn">Learn More About Us</a>
                 </button>
-                <div class="smallmg mt-5">
+                <!-- <div class="smallmg mt-5">
                     <img src="assets/img/bookwest.png" alt="Bible">
-                </div>
+                </div> -->
             </div>
             <div class="root">
                 <div class="images">
                     <div class="main-img">
-                        <img src="assets/img/rooted.jpeg" alt="Speaker">
+                        <img src="assets/img/we-are.png" alt="Speaker">
                     </div>
                 </div>
             </div>
@@ -107,7 +110,6 @@ include('includes/header.php');
             </div>
             <div class="content">
                 <p>We gather as a church family to honor God with reverence and gratitude. Our worship is centered on Scripture, prayer, and the glory of Christ as we respond to His truth with thankful hearts.</p>
-                <img src="assets/img/workship.png" alt="Workship">
             </div>
         </div>
 
@@ -121,7 +123,6 @@ include('includes/header.php');
             </div>
             <div class="content">
                 <p>We boldly proclaim the Gospel of Jesus Christ through faithful teaching, preaching, and everyday witness. Our desire is to make God’s Word known with clarity, truth, and grace.</p>
-                <img src="assets/img/workship.png" alt="Workship">
             </div>
         </div>
 
@@ -129,13 +130,12 @@ include('includes/header.php');
             <div class="top">
                 <div class="left">
                     <span class="number">03</span>
-                    <h3>DISCIPLE</h3>
+                    <h3>DISCIPLES</h3>
                 </div>
                 <div class="icon">+</div>
             </div>
             <div class="content">
                 <p>We are committed to growing together as disciples of Christ through biblical teaching, prayer, fellowship, and obedience to God’s Word. Spiritual growth happens in community as we encourage one another in faith.</p>
-                <img src="assets/img/workship.png" alt="Workship">
             </div>
         </div>
 
@@ -149,7 +149,6 @@ include('includes/header.php');
             </div>
             <div class="content">
                 <p>We desire to continually grow in our love for God, our understanding of Scripture, and our likeness to Christ. Through the work of the Holy Spirit, we pursue lives marked by humility, holiness, and faithfulness.</p>
-                <img src="assets/img/workship.png" alt="Workship">
             </div>
         </div>
 
@@ -163,7 +162,6 @@ include('includes/header.php');
             </div>
             <div class="content">
                 <p>We seek to live on mission by sharing the hope of the Gospel in our homes, neighborhoods, workplaces, and around the world. As followers of Christ, we are called to serve others and make disciples wherever God leads us.</p>
-                <img src="assets/img/workship.png" alt="Workship">
             </div>
         </div>
     </div>
@@ -174,17 +172,12 @@ include('includes/header.php');
         <div class="expect">
             <h2>expectation</h2>
             <p class="expecta">What to Expect</p>
+            <p class="exp">A welcoming church family, clear Bible teaching, and simple worship. No hype. No pressure. Come as you are.</p>
         </div>
         <div class="what-ex">
-            <div class="weexp">
-                <img src="assets/img/expecta.png" alt="Expectations">
-            </div>
-            <div class="toexpext">
-                <div class="expact">
-                    <div class="extwo">
-                        <p>A welcoming church family, clear Bible teaching, and simple worship. No hype. No pressure.
-                            Come as you are.</p>
-                        <div class="act">
+            <div class="expact" style="background: url('assets/img/exp.png'); background-size: cover; background-position: center; display: flex; align-items: center;">
+                <div class="extwo">
+                    <div class="act">
                             <h3>Acts 2:42</h3>
                             <div class="check-list">
                                 <div class="check-svg">
@@ -253,16 +246,11 @@ include('includes/header.php');
                             <button>
                                 <a href="./about.php">Learn More</a>
                             </button>
-                        </div>
-                    </div>
-                    <div class="extwoimg">
-                        <img src="assets/img/ex.png" alt="Expectations">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
 
 <section id="faithful">
@@ -434,3 +422,19 @@ include('includes/header.php');
 
 <?php include('includes/footer.inc.php'); ?>
 
+<style>
+    a.w-live{
+        margin-left:16px;
+    }
+    @media screen and (max-width: 481px) {
+    .bannmain button {
+        margin-top: 18px;
+    }
+    a.w-live{
+        margin-left:unset;
+    }
+    #banner-west {
+        height: 48vh;
+    }
+    }
+</style>

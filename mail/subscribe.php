@@ -83,12 +83,13 @@ $ownerMail = new PHPMailer(true);
 try {
 
     $ownerMail->isSMTP();
-    $ownerMail->Host       = 'smtp-relay.brevo.com';
+    $ownerMail->Host       = $_ENV['MAIL_HOST'];
     $ownerMail->SMTPAuth   = true;
-    $ownerMail->Username   = '9a4a7c001@smtp-brevo.com';
-    $ownerMail->Password   = $_ENV['SMTP_KEY'];
-    $ownerMail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $ownerMail->Port       = 587;
+    $ownerMail->Username   = $_ENV['MAIL_USERNAME'];
+    $ownerMail->Password   = $_ENV['MAIL_PASSWORD'];
+    $ownerMail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $ownerMail->Port       = $_ENV['MAIL_PORT'];
+    $ownerMail->Hostname   = 'westdenverbiblechurch.myconcept.website';
 
     $ownerMail->SMTPOptions = [
         'ssl' => [
@@ -98,7 +99,8 @@ try {
         ],
     ];
 
-    $ownerMail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
+    $ownerMail->setFrom($_ENV['MAIL_FROM_ADDRESS'], $_ENV['MAIL_FROM_NAME']);
+    $ownerMail->addReplyTo($_ENV['MAIL_FROM_ADDRESS'], $_ENV['MAIL_FROM_NAME']);
 
     // owner/admin email
     $ownerMail->addAddress('mahalleavanti@gmail.com');
@@ -158,12 +160,13 @@ $mail = new PHPMailer(true);
 try {
 
     $mail->isSMTP();
-    $mail->Host       = 'smtp-relay.brevo.com';
+    $mail->Host       = $_ENV['MAIL_HOST'];
     $mail->SMTPAuth   = true;
-    $mail->Username   = '9a4a7c001@smtp-brevo.com';
-    $mail->Password   = $_ENV['SMTP_KEY'];
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;
+    $mail->Username   = $_ENV['MAIL_USERNAME'];
+    $mail->Password   = $_ENV['MAIL_PASSWORD'];
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port       = $_ENV['MAIL_PORT'];
+    $mail->Hostname   = 'westdenverbiblechurch.myconcept.website';
 
     $mail->SMTPOptions = [
         'ssl' => [
@@ -173,7 +176,8 @@ try {
         ],
     ];
 
-    $mail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
+    $mail->setFrom($_ENV['MAIL_FROM_ADDRESS'], $_ENV['MAIL_FROM_NAME']);
+    $mail->addReplyTo($_ENV['MAIL_FROM_ADDRESS'], $_ENV['MAIL_FROM_NAME']);
 
     // send email to subscriber
     $mail->addAddress($email);
@@ -226,7 +230,7 @@ try {
 echo "
 <script>
 alert('Subscribed Successfully!');
-window.location.href='../index.php';
+window.location.href='../';
 </script>
 ";
 

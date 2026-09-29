@@ -30,24 +30,22 @@ include('includes/header.php');
         <div class="message">
             <h2>LATEST MESSAGE</h2>
             <p>LATEST MESSAGE</p>
-              <iframe
-            width="100%"
-            height="70%"
-            src="https://www.youtube.com/embed/videoseries?list=UUeFyxpKgF697N1JZc3feBoQ"
-            title="YouTube videos"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-        <div class="videohead">
-            <div class="videotitle">
-                <h3>Learning to Trust God in Difficult Times</h3>
-                <h4>Pastor John Smith | March 2026</h4>
-            </div>
-            <div class="videobut">
-                <button><a href="https://www.youtube.com/@westdenverbiblechurch" target="_blank">Watch Sermons</a></button>
+            <iframe width="100%" height="70%"
+                src="https://www.youtube.com/embed/videoseries?list=PLzPcTc0lM4498kytt68iuZ20JOQaoorw_" title="YouTube videos" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            <div class="videohead">
+                <div class="videotitle">
+                    <h3>Learning to Trust God in Difficult Times</h3>
+                    <h4>Pastor John Smith | March 2026</h4>
+                </div>
+                <div class="videobut">
+                    <button><a href="https://www.youtube.com/@westdenverbiblechurch" target="_blank">Watch
+                            Sermons</a></button>
+                </div>
             </div>
         </div>
-    </div>
 </section>
 
 <section id="fellowship">
@@ -86,6 +84,18 @@ include('includes/header.php');
     </div>
 </section> -->
 
+
+<?php
+$apiKey = 'AIzaSyAl2X7ekFYszRsrxAux05tKfge24p0WPu4';
+$channelId = 'UCeFyxpKgF697N1JZc3feBoQ';
+
+$apiUrl = "https://www.googleapis.com/youtube/v3/search?key={$apiKey}&channelId={$channelId}&part=snippet,id&order=date&maxResults=4&type=video";
+
+$response = file_get_contents($apiUrl);
+$data = json_decode($response, true);
+?>
+
+
 <!-- NEW SERMONS -->
 
 <section id="new-sermons">
@@ -103,83 +113,50 @@ include('includes/header.php');
         </div>
         <div class="sermon-main">
             <div class="sermon-wrapper">
+                <?php if (!empty($data['items'])): ?>
+                <?php foreach ($data['items'] as $video): ?>
+                <?php
+            $videoId = $video['id']['videoId'];
+            $title = $video['snippet']['title'];
+            $thumbnail = $video['snippet']['thumbnails']['high']['url'];
+            $date = date('d M Y', strtotime($video['snippet']['publishedAt']));
+            ?>
                 <div class="living-faith">
-                    <img src="assets/img/faith.png" alt="Living By Faith">
+                    <img src="<?php echo $thumbnail; ?>" alt="<?php echo htmlspecialchars($title); ?>">
                     <div class="sermon-content">
-                        <h2>LIVING BY FAITH</h2>
-                        <p>Pastor John Smith - 25 feb</p>
-                        <button><a href="https://www.youtube.com/@westdenverbiblechurch" target="_blank">Watch Sermons</a></button>
+                        <h2>
+                            <?php
+                            $shortTitle = mb_strimwidth($title, 0, 40, '...');
+                            echo htmlspecialchars(html_entity_decode($shortTitle, ENT_QUOTES, 'UTF-8'));
+                            ?>
+                        </h2>
+                        <p>West Denver Bible Church - <?php echo $date; ?></p>
+                        <button>
+                            <a href="https://www.youtube.com/watch?v=<?php echo $videoId; ?>" target="_blank">
+                                Watch Sermon
+                            </a>
+                        </button>
                     </div>
                 </div>
-                <div class="power">
-                    <img src="assets/img/power-grace.png" alt="Power Of Grace">
-
-                    <div class="sermon-content">
-                        <h2>THE POWER OF GRACE</h2>
-                        <p>Pastor John Smith - 25 feb</p>
-                        <button><a href="https://www.youtube.com/@westdenverbiblechurch" target="_blank">Watch Sermons</a></button>
-                    </div>
-                </div>
-                <div class="god-faithful">
-                    <img src="assets/img/god-faith.png" alt="God Faithfulness">
-
-                    <div class="sermon-content">
-                        <h2>GOD’S FAITHFULNESS</h2>
-                        <p>Pastor John Smith - 25 feb</p>
-                        <button><a href="https://www.youtube.com/@westdenverbiblechurch" target="_blank">Watch Sermons</a></button>
-                    </div>
-                </div>
-                <!-- Extra Slides -->
-                <div class="living-faith">
-                    <img src="assets/img/faith.png" alt="Faith">
-
-                    <div class="sermon-content">
-                        <h2>WALK IN FAITH</h2>
-                        <p>Pastor John Smith - 25 feb</p>
-                        <button><a href="https://www.youtube.com/@westdenverbiblechurch" target="_blank">Watch Sermons</a></button>
-                    </div>
-                </div>
+                <?php endforeach; ?>
+                <?php endif; ?>
             </div>
         </div>
-        
         <div class="slider-bottom">
-
             <div class="slider-line">
                 <span></span>
             </div>
-
             <div class="slider-arrows">
-
                 <button class="prev">
                     <i class="fa-solid fa-angle-left"></i>
                 </button>
-
                 <button class="next">
                     <i class="fa-solid fa-angle-right"></i>
                 </button>
-
             </div>
-
         </div>
-        <!-- <div class="watch-sun">
-            <div class="watch-image">
-                <img src="assets/img/watchwe.png" alt="">
-            </div>
-            <div class="watch-txtimg">
-                <div class="watchhead">
-                    <h2>LIVE</h2>
-                    <p>Join Us Live</p>
-                </div>
-                <div class="watch-join">
-                    <h3>Watch our Sunday service live from wherever you are.</h3>
-                    <p>If you can not be with us in person, you are invited to join us online.</p>
-                    <button><a href="#">Watch Livestream</a></button>
-                </div>
-            </div>
-        </div> -->
     </div>
 </section>
-
 
 <?php include('includes/live.php'); ?>
 

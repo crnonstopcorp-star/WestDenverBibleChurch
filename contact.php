@@ -98,7 +98,7 @@ include('includes/header.php');
 
 <!-- LiveStram -->
 
-<section class="live-stream-section">
+<section id="live-stream-section">
     <div class="container">
         <h2>Livestream</h2>
         <p>Livestream</p>
@@ -116,12 +116,12 @@ include('includes/header.php');
 
 <!-- <style>
 
-.live-stream-section{
+#live-stream-section{
     width:100%;
     padding:60px 0;
 }
 
-.live-stream-section iframe{
+#live-stream-section iframe{
     width:100%;
     height:650px;
     border:none;
@@ -137,7 +137,7 @@ include('includes/header.php');
 
 @media(max-width:768px){
 
-    .live-stream-section iframe{
+    #live-stream-section iframe{
         height:300px;
     }
 

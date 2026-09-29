@@ -150,7 +150,7 @@ a {
     color: var(--reg-color);
     margin-top: 10px;
 }
-.bannmain button a {
+.bannmain a {
     font-family: var(--main-font);
     font-weight: 600;
     font-style: SemiBold;
@@ -168,6 +168,17 @@ a {
     border: 1px transparent;
     padding: 14px 18px;
     margin-top: 20px;
+}
+.bannmain a button {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: var(--paragraph-anchor);
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: var(--char);
 }
 button.plan a{
     font-family: var(--main-font);
@@ -199,6 +210,9 @@ button.plan {
 }
 .who-we-are {
     padding: 100px 0px 0px 0px;
+}
+.root:nth-child(1) {
+    margin-top: 40px;
 }
 .root{
     width: 50%;
@@ -337,6 +351,7 @@ button.tabtn {
 .taughtcl img {
     width: 100%;
     height: 100%;
+    object-fit :cover;
 }
 .taughtcl {
     width: calc(100% / 2);
@@ -715,23 +730,17 @@ button.subscribe {
 .expect {
     text-align: center;
 }
-.expact,.what-ex {
-    display: flex;
-    gap: 20px;
+.expact {
+    padding: 100px 35px 30px 35px;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
-.extwo, .extwoimg {
-    width: 50%;
+.extwo {
+    width: 33%;
+    margin-top: 60px;
 }
 .extwoimg img {
     width: 100%;
-}
-.expact{
-    display: flex;
-    gap: 20px;
-    align-items: flex-end;
-}
-.toexpext {
-    display: flex;
 }
 .act {
     background: var(--char);
@@ -825,12 +834,19 @@ p.expecta {
 .extwoimg img {
     height: 63%;
 }
-.expect {
-    transform: translateY(228px);
-    padding-left: 223px;
-}
 #expectations {
-    padding: 17px 0px 100px 0px;
+    padding: 88px 0px 100px 0px;
+}
+p.exp {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: var(--paragraph-anchor);
+    leading-trim: NONE;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #1E1E1E;
+    margin-bottom: 40px;
 }
 
 /* Contact */
@@ -2093,16 +2109,16 @@ span.worsh {
     object-fit: cover;
     object-position: top;
 }
-.live-stream-section{
+#live-stream-section{
     width:100%;
     padding:60px 0;
 }
-.live-stream-section iframe{
+#live-stream-section iframe{
     width:100%;
     height:600px;
     border:none;
 }
-.live-stream-section h2 {
+#live-stream-section h2 {
     font-family: var(--main-font);
     font-weight: 700;
     font-style: Bold;
@@ -2113,7 +2129,7 @@ span.worsh {
     color: #eaebeb;
     text-align: center;
 }
-.live-stream-section p {
+#live-stream-section p {
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -2138,4 +2154,11 @@ span.worsh {
 .footerimage hr, .footerhr hr {
     color: var(--secondary-color);
     opacity: 0.6;
+}
+
+button.plan a:hover {
+    color: var(--secondary-color);
+}
+.header-center p span a {
+    color: #C2A69A;
 }

@@ -8,7 +8,7 @@
             <div class="header-center">
                 <p><span>SERMONS |</span><span class="lstream"> VIDEOS HERE </span>- 10-11</p>
                 <div class="divider"></div>
-                <p><span class="lstream">Prayer</span> Request Form <span>HERE</span></p>
+                <p><span class="lstream">Prayer</span> Request Form <span><a href="/#Contact-Information">HERE</a></span></p>
             </div>
             <div class="header-right">
                 <div class="hamburger" id="hamburger">
@@ -55,7 +55,7 @@
         About
     </a>
 
-    <a href="#">Giving</a>
+    <a href="https://southsidebible.onechurchsoftware.com/public/give?funds=59" target="_blank">Giving</a>
 
     <a href="./contact.php"
         class="<?= basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'menu-active' : '' ?>">

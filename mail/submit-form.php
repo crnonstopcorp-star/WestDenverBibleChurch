@@ -69,12 +69,13 @@ $mail = new PHPMailer(true);
 
 try {
     $mail->isSMTP();
-    $mail->Host       = 'smtp-relay.brevo.com';
+    $mail->Host       = $_ENV['MAIL_HOST'];
     $mail->SMTPAuth   = true;
-    $mail->Username = '9a4a7c001@smtp-brevo.com';
-    $mail->Password   = $_ENV['SMTP_KEY'];
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;
+    $mail->Username = $_ENV['MAIL_USERNAME'];
+    $mail->Password   = $_ENV['MAIL_PASSWORD'];
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port       = $_ENV['MAIL_PORT'];
+    $mail->Hostname   = 'westdenverbiblechurch.myconcept.website';
     
     $mail->SMTPOptions = [
     'ssl' => [
@@ -84,7 +85,8 @@ try {
     ],
 ];
 
-    $mail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
+    $mail->setFrom($_ENV['MAIL_FROM_ADDRESS'], $_ENV['MAIL_FROM_NAME']);
+    $mail->addReplyTo($_ENV['MAIL_FROM_ADDRESS'], $_ENV['MAIL_FROM_NAME']);
     $mail->addAddress('mahalleavanti@gmail.com'); 
 
     $mail->isHTML(true);
@@ -180,12 +182,13 @@ $userMail = new PHPMailer(true);
 
 try {
     $userMail->isSMTP();
-    $userMail->Host       = 'smtp-relay.brevo.com';
+    $userMail->Host       = $_ENV['MAIL_HOST'];
     $userMail->SMTPAuth   = true;
-    $userMail->Username = '9a4a7c001@smtp-brevo.com';
-    $userMail->Password   = $_ENV['SMTP_KEY'];
-    $userMail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $userMail->Port       = 587;
+    $userMail->Username = $_ENV['MAIL_USERNAME'];
+    $userMail->Password   = $_ENV['MAIL_PASSWORD'];
+    $userMail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $userMail->Port       = $_ENV['MAIL_PORT'];
+    $userMail->Hostname   = 'westdenverbiblechurch.myconcept.website';
     
     $userMail->SMTPOptions = [
     'ssl' => [
@@ -196,7 +199,8 @@ try {
 ];
 
 
-    $userMail->setFrom('mahalleavanti@gmail.com', 'WestDenver');
+    $userMail->setFrom($_ENV['MAIL_FROM_ADDRESS'], $_ENV['MAIL_FROM_NAME']);
+    $userMail->addReplyTo($_ENV['MAIL_FROM_ADDRESS'], $_ENV['MAIL_FROM_NAME']);
 
     $userMail->addAddress($email);
 
@@ -241,7 +245,7 @@ try {
 echo "
 <script>
 alert('Form submitted successfully!');
-window.location.href='../index.php';
+window.location.href='../';
 </script>
 ";
 
